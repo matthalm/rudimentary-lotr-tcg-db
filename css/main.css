@@ -11,7 +11,7 @@
    /* display: inline-block; */
     margin: 20px;
    /* max-width: 290px; */
-    border-radius: 20px;
+    border-radius: 10px;
     overflow: hidden;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.35); 
 }
