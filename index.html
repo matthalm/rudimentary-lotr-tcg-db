@@ -3,6 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
+
 	<title>LOTR TCG Database</title>
 
 	<link rel="stylesheet" href="css/main.css">
@@ -14,100 +15,73 @@
 	<div class="controls">
 	<form id="filters">
 
-	<table>
+	<table style="background-color:#d9ead3">
 		<tr>
 			<th>Fellowship Block</th>
 		</tr>
 		<tr>
 			<td>
 				<fieldset>
-					<input type="checkbox" id="toggle-Fellowship" onclick="toggle('toggle-Fellowship','set-1')">
-					<label for="toggle-Fellowship">Fellowship of the Ring</label></br>
-		
-					<input type="checkbox" id="toggle-Moria" onclick="toggle('toggle-Moria','set-2')">
-					<label for="toggle-Moria">Mines of Moria</label></br>
-		
-					<input type="checkbox" id="toggle-Realms" onclick="toggle('toggle-Realms','set-3')">
-					<label for="toggle-Realms">Realms of the Elf-Lords</label></br>
-
-					<input type="checkbox" id="toggle-Past" onclick="toggle('toggle-Past','set-v1')">
-					<label for="toggle-Past">Shadow of the Past (V1)</label></br>
+					<input type="checkbox" id="toggle-Fellowship"><label for="toggle-Fellowship">Fellowship of the Ring</label></br>
+					<input type="checkbox" id="toggle-Mines"><label for="toggle-Mines">Mines of Moria</label></br>
+					<input type="checkbox" id="toggle-Realms"><label for="toggle-Realms">Realms of the Elf-Lords</label></br>
+					<input type="checkbox" id="toggle-Past"><label for="toggle-Past">Shadow of the Past (V1)</label></br>
 				</fieldset>
 			</td>
 		</tr>
 	</table>
-	<table>
+	<table style="background-color:#cfe2f3">
 		<tr>
 			<th>Towers Block</th>
 		</tr>
 		<tr>
 			<td>
 				<fieldset>
-					<input type="checkbox" id="toggle-Towers" onclick="toggle('toggle-Towers','set-4')">
-					<label for="toggle-Towers">The Two Towers</label></br>
-		
-					<input type="checkbox" id="toggle-Battle" onclick="toggle('toggle-Battle','set-5')">
-					<label for="toggle-Battle">Battle of Helm's Deep</label></br>
-		
-					<input type="checkbox" id="toggle-Ents" onclick="toggle('toggle-Ents','set-6')">
-					<label for="toggle-Ents">Ents of Fangorn</label>
+					<input type="checkbox" id="toggle-Towers"><label for="toggle-Towers">The Two Towers</label></br>
+					<input type="checkbox" id="toggle-Battle"><label for="toggle-Battle">Battle of Helm's Deep</label></br>
+					<input type="checkbox" id="toggle-Ents"><label for="toggle-Ents">Ents of Fangorn</label>
 				</fieldset>
 			</td>
 		</tr>
 	</table>
-	<table>
+	<table style="background-color:#fce5cd">
 		<tr>
 			<th>King Block</th>
 		</tr>
 		<tr>
 			<td>
 				<fieldset>
-					<input type="checkbox" id="toggle-King" onclick="toggle('toggle-King','set-7')">
-					<label for="toggle-King">Return of the King</label></br>
-		
-					<input type="checkbox" id="toggle-Siege" onclick="toggle('toggle-Siege','set-8')">
-					<label for="toggle-Siege">Siege of Gondor</label></br>
-		
-					<input type="checkbox" id="toggle-Doom" onclick="toggle('toggle-Doom','set-10')">
-					<label for="toggle-Doom">Mount Doom</label>
+					<input type="checkbox" id="toggle-King"><label for="toggle-King">Return of the King</label></br>
+					<input type="checkbox" id="toggle-Siege"><label for="toggle-Siege">Siege of Gondor</label></br>
+					<input type="checkbox" id="toggle-Doom"><label for="toggle-Doom">Mount Doom</label>
 				</fieldset>
 			</td>
 		</tr>
 	</table>
-	<table>
+	<table style="background-color:#f4cccc">
 		<tr>
 			<th>War Block</th>
 		</tr>
 		<tr>
 			<td>
 				<fieldset>
-					<input type="checkbox" id="toggle-Shadows" onclick="toggle('toggle-Shadows','set-11')">
-					<label for="toggle-Shadows">Shadows</label></br>
-		
-					<input type="checkbox" id="toggle-Rider" onclick="toggle('toggle-Rider','set-12')">
-					<label for="toggle-Rider">Black Rider</label></br>
-		
-					<input type="checkbox" id="toggle-Bloodlines" onclick="toggle('toggle-Bloodlines','set-13')">
-					<label for="toggle-Bloodlines">Bloodlines</label>
+					<input type="checkbox" id="toggle-Shadows"><label for="toggle-Shadows">Shadows</label></br>		
+					<input type="checkbox" id="toggle-Rider"><label for="toggle-Rider">Black Rider</label></br>
+					<input type="checkbox" id="toggle-Bloodlines"><label for="toggle-Bloodlines">Bloodlines</label>
 				</fieldset>
 			</td>
 		</tr>
 	</table>
-	<table>
+	<table style="background-color:#fff2cc">
 		<tr>
 			<th>Hunters Block</th>
 		</tr>
 		<tr>
 			<td>
 				<fieldset>
-					<input type="checkbox" id="toggle-Hunters" onclick="toggle('toggle-Hunters','set-15')">
-					<label for="toggle-Hunters">The Hunters</label></br>
-		
-					<input type="checkbox" id="toggle-Rise" onclick="toggle('toggle-Rise','set-17')">
-					<label for="toggle-Rise">Rise of Saruman</label></br>
-		
-					<input type="checkbox" id="toggle-Treachery" onclick="toggle('toggle-Treachery','set-18')">
-					<label for="toggle-Treachery">Treachery & Deceit</label>
+					<input type="checkbox" id="toggle-Hunters"><label for="toggle-Hunters">The Hunters</label></br>
+					<input type="checkbox" id="toggle-Rise"><label for="toggle-Rise">Rise of Saruman</label></br>
+					<input type="checkbox" id="toggle-Treachery"><label for="toggle-Treachery">Treachery & Deceit</label>
 				</fieldset>
 			</td>
 		</tr>
@@ -119,38 +93,46 @@
 		<tr>
 			<td>
 				<fieldset>
-					<input type="checkbox" id="toggle-Reflections" onclick="toggle('toggle-Reflections','set-9')">
-					<label for="toggle-Reflections">Reflections</label></br>
-		
-					<input type="checkbox" id="toggle-Expanded" onclick="toggle('toggle-Expanded','set-14')">
-					<label for="toggle-Expanded">Expanded Middle Earth</label></br>
-		
-					<input type="checkbox" id="toggle-Wraith" onclick="toggle('toggle-Wraith','set-16')">
-					<label for="toggle-Wraith">The Wraith Collection</label></br>
-
-					<input type="checkbox" id="toggle-End" onclick="toggle('toggle-End','set-19')">
-					<label for="toggle-End">Age's End</label>
+					<input type="checkbox" id="toggle-Reflections"><label for="toggle-Reflections">Reflections</label></br>
+					<input type="checkbox" id="toggle-Expanded"><label for="toggle-Expanded">Expanded Middle Earth</label></br>
+					<input type="checkbox" id="toggle-Wraith"><label for="toggle-Wraith">The Wraith Collection</label></br>
+					<input type="checkbox" id="toggle-End"><label for="toggle-End">Age's End</label>
 				</fieldset>
 			</td>
 		</tr>
 	</table>
-
-</br>
 
 	<table>
 		<tr>
 			<th>Cultures</th>
 		</tr>
 		<tr>
-			<td>
-				<fieldset>
-					<input type="checkbox" id="toggle-dwarf" onclick="toggle('toggle-dwarf','culture-dwarf')" checked>
-					<label for="toggle-dwarf">Dwarven</label></br>
-		
-					<input type="checkbox" id="toggle-elf" onclick="toggle('toggle-elf','culture-elf')" checked>
-					<label for="toggle-elf">Elven</label>
-				</fieldset>
-			</td>
+			<!--<fieldset>-->
+				<td>
+					<input type="checkbox" id="toggle-dwarf"><label for="toggle-dwarf"><img src="https://lotrtcgdb.com/forums/Smileys/classic/dwarven.png" height="12px"> Dwarven</label></br>
+					<input type="checkbox" id="toggle-elf"><label for="toggle-elf"><img src="https://lotrtcgdb.com/forums/Smileys/classic/elven.png" height="12px"> Elven</label></br>
+					<input type="checkbox" id="toggle-gandalf"><label for="toggle-gandalf"><img src="https://lotrtcgdb.com/forums/Smileys/classic/gandalf.png" height="12px"> Gandalf</label></br>
+					<input type="checkbox" id="toggle-smeagol"><label for="toggle-smeagol">Gollum (Free Peoples)</label></br>
+					<input type="checkbox" id="toggle-gondor"><label for="toggle-gondor">Gondor</label></br>
+					<input type="checkbox" id="toggle-rohan"><label for="toggle-rohan">Rohan</label></br>
+					<input type="checkbox" id="toggle-shire"><label for="toggle-shire">Shire</label>
+				</td>
+				<td>
+					<input type="checkbox" id="toggle-dunland"><label for="toggle-dunland">Dunland</label></br>
+					<input type="checkbox" id="toggle-gollum"><label for="toggle-gollum">Gollum (Shadow)</label></br>
+					<input type="checkbox" id="toggle-isengard"><label for="toggle-isengard">Isengard</label></br>
+					<input type="checkbox" id="toggle-moria"><label for="toggle-moria">Moria</label></br>
+					<input type="checkbox" id="toggle-raider"><label for="toggle-raider">Raider</label></br>
+					<input type="checkbox" id="toggle-ringwraith"><label for="toggle-ringwraith">Ringwraith</label></br>
+					<input type="checkbox" id="toggle-sauron"><label for="toggle-sauron">Sauron</label>
+				</td>
+				<td>
+					<input type="checkbox" id="toggle-men"><label for="toggle-men">Men</label></br>
+					<input type="checkbox" id="toggle-orc"><label for="toggle-orc">Orc</label></br>
+					<input type="checkbox" id="toggle-urukhai"><label for="toggle-urukhai">Uruk-hai</label></br>
+					<input type="checkbox" id="toggle-wraith"><label for="toggle-wraith">Wraith</label>
+				</td>	
+			<!--</fieldset>-->
 		</tr>
 	</table>
 
@@ -159,17 +141,26 @@
 			<th>Card Types</th>
 		</tr>
 		<tr>
-			<td>
-				<fieldset>
-					<input type="checkbox" id="toggle-character" onclick="toggle('toggle-character','type-character')" checked>
-					<label for="toggle-character">Character</label></br>
-		
-					<input type="checkbox" id="toggle-condition" onclick="toggle('toggle-condition','type-condition')" checked>
-					<label for="toggle-condition">Condition</label>
-				</fieldset>
-			</td>
+			<!--<fieldset>-->
+				<td>
+					<input type="checkbox" id="toggle-ally"><label for="toggle-ally">Ally</label></br>
+					<input type="checkbox" id="toggle-artifact"><label for="toggle-artifact">Artifact</label></br>
+					<input type="checkbox" id="toggle-companion"><label for="toggle-companion">Companion</label></br>
+					<input type="checkbox" id="toggle-condition"><label for="toggle-condition">Condition</label></br>
+					<input type="checkbox" id="toggle-event"><label for="toggle-event">Event</label>
+				</td>
+				<td>
+					<input type="checkbox" id="toggle-follower"><label for="toggle-follower">Follower</label></br>
+					<input type="checkbox" id="toggle-minion"><label for="toggle-minion">Minion</label></br>
+					<input type="checkbox" id="toggle-possession"><label for="toggle-possession">Possession</label></br>
+					<input type="checkbox" id="toggle-ring"><label for="toggle-ring">Ring</label></br>
+					<input type="checkbox" id="toggle-site"><label for="toggle-site">Site</label>
+				</td>
+			<!--</fieldset>-->
 		</tr>
 	</table>	
+
+	<button type="button" onclick="displayResults()">Search</button>
 
 	<button id="Reset">Reset</button>
 
@@ -179,18 +170,19 @@
 	<div id="card-container">
 
 		<!-- SET 01: FELLOWSHIP -->
-		<div class="card set-1"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S001.0_card.jpg"></div>
-		<div class="card set-1"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S002.0_card.jpg"></div>
-		<div class="card set-1 culture-dwarf"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S003.0_card.jpg"></div>
-		<div class="card set-1 culture-dwarf"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S004.0_card.jpg"></div>
-		<div class="card set-1 culture-dwarf"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S005.0_card.jpg"></div>
-		<div class="card set-1 culture-dwarf"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S006.0_card.jpg"></div>
-		<div class="card set-1 culture-dwarf"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S007.0_card.jpg"></div>
-		<div class="card set-1 culture-dwarf"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S008.0_card.jpg"></div>
-		<div class="card set-1 culture-dwarf"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S009.0_card.jpg"></div>
+		<div class="card set-1 culture-na type-ring"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S001.0_card.jpg"></div>
+		<div class="card set-1 culture-na type-ring"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S002.0_card.jpg"></div>
+		<div class="card set-1 culture-dwarf type-event"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S003.0_card.jpg"></div>
+		<div class="card set-1 culture-dwarf type-event"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S004.0_card.jpg"></div>
+		<div class="card set-1 culture-dwarf type-event"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S005.0_card.jpg"></div>
+		<div class="card set-1 culture-dwarf type-event"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S006.0_card.jpg"></div>
+		<div class="card set-1 culture-dwarf type-companion"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S007.0_card.jpg"></div>
+		<div class="card set-1 culture-dwarf type-possession"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S008.0_card.jpg"></div>
+		<div class="card set-1 culture-dwarf type-possession"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S009.0_card.jpg"></div>
 
 		<!-- SET 02: MINES -->
-		<div class="card set-2 culture-dwarf"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN02S001.0_card.jpg"></div>
+		<div class="card set-2 culture-dwarf type-condition"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN02S001.0_card.jpg"></div>
+		<div class="card set-2 culture-dwarf type-event"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN02S002.0_card.jpg"></div>
 
 
 	</div>
