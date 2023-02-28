@@ -5,6 +5,11 @@
 
 /* CARDS */
 
+.card img {
+    width: 320px;
+    height: 440px;
+}
+
 #card-container {
     text-align: center;
 }
