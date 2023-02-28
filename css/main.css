@@ -7,19 +7,23 @@
     text-align: center;
 }
 
-table {
+fieldset {
     display: inline-block;
     vertical-align: top;
     text-align: left;
+    border: 0px;
+    padding: 5px;
+}
+
+legend {
+    background-color:white;
+    border: 1px solid;
+    padding: 2px;
+    font-weight: bold;
 }
 
 table td {
     vertical-align: top;
-}
-
-fieldset {
-    border: 0px;
-    padding: 0px;
 }
 
 /* CARDS */
