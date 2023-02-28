@@ -28,7 +28,10 @@
 					<label for="toggle-Moria">Mines of Moria</label></br>
 		
 					<input type="checkbox" id="toggle-Realms" onclick="toggle('toggle-Realms','set-3')">
-					<label for="toggle-Realms">Realms of the Elf-Lords</label>
+					<label for="toggle-Realms">Realms of the Elf-Lords</label></br>
+
+					<input type="checkbox" id="toggle-Past" onclick="toggle('toggle-Past','set-v1')">
+					<label for="toggle-Past">Shadow of the Past (V1)</label></br>
 				</fieldset>
 			</td>
 		</tr>
@@ -129,32 +132,47 @@
 					<label for="toggle-End">Age's End</label>
 				</fieldset>
 			</td>
+		</tr>
+	</table>
+
+</br>
+
+	<table>
+		<tr>
+			<th>Cultures</th>
+		</tr>
+		<tr>
+			<td>
+				<fieldset>
+					<input type="checkbox" id="toggle-dwarf" onclick="toggle('toggle-dwarf','culture-dwarf')" checked>
+					<label for="toggle-dwarf">Dwarven</label></br>
+		
+					<input type="checkbox" id="toggle-elf" onclick="toggle('toggle-elf','culture-elf')" checked>
+					<label for="toggle-elf">Elven</label>
+				</fieldset>
 			</td>
 		</tr>
 	</table>
 
-	<fieldset>
-		<select>
-			<option value="">All Cultures</option>
-			<option value=".culture-dwarf">Dwarven</option>
-			<option value=".culture-elf">Elven</option>
-			<option value=".culture-gandalf">Gandalf</option>
-			<option value=".culture-gondor">Gondor</option>
-			<option value=".culture-rohan">Rohan</option>
-			<option value=".culture-shire">Shire</option>
-		</select>
+	<table>
+		<tr>
+			<th>Card Types</th>
+		</tr>
+		<tr>
+			<td>
+				<fieldset>
+					<input type="checkbox" id="toggle-character" onclick="toggle('toggle-character','type-character')" checked>
+					<label for="toggle-character">Character</label></br>
+		
+					<input type="checkbox" id="toggle-condition" onclick="toggle('toggle-condition','type-condition')" checked>
+					<label for="toggle-condition">Condition</label>
+				</fieldset>
+			</td>
+		</tr>
+	</table>	
 
-		<select>
-			<option value="">All Card Types</option>
-			<option value=".type-charcter">Character</option>
-			<option value=".type-condition">Condition</option>
-			<option value=".type-event">Event</option>
-			<option value=".type-possession">Possession</option>
-			<option value=".type-site">Site</option>
-		</select>
-	
-		<button id="Reset">Reset</button>
-	</fieldset>
+	<button id="Reset">Reset</button>
+
 	</form>
 	</div>
 
@@ -163,16 +181,16 @@
 		<!-- SET 01: FELLOWSHIP -->
 		<div class="card set-1"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S001.0_card.jpg"></div>
 		<div class="card set-1"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S002.0_card.jpg"></div>
-		<div class="card set-1"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S003.0_card.jpg"></div>
-		<div class="card set-1"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S004.0_card.jpg"></div>
-		<div class="card set-1"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S005.0_card.jpg"></div>
-		<div class="card set-1"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S006.0_card.jpg"></div>
-		<div class="card set-1"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S007.0_card.jpg"></div>
-		<div class="card set-1"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S008.0_card.jpg"></div>
-		<div class="card set-1"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S009.0_card.jpg"></div>
+		<div class="card set-1 culture-dwarf"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S003.0_card.jpg"></div>
+		<div class="card set-1 culture-dwarf"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S004.0_card.jpg"></div>
+		<div class="card set-1 culture-dwarf"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S005.0_card.jpg"></div>
+		<div class="card set-1 culture-dwarf"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S006.0_card.jpg"></div>
+		<div class="card set-1 culture-dwarf"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S007.0_card.jpg"></div>
+		<div class="card set-1 culture-dwarf"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S008.0_card.jpg"></div>
+		<div class="card set-1 culture-dwarf"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S009.0_card.jpg"></div>
 
 		<!-- SET 02: MINES -->
-		<div class="card set-2"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN02S001.0_card.jpg"></div>
+		<div class="card set-2 culture-dwarf"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN02S001.0_card.jpg"></div>
 
 
 	</div>

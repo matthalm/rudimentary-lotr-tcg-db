@@ -1,14 +1,21 @@
 .controls {
     top: 0; 
-    position: fixed;
+    position: sticky;
     display: block;
     font-size: .9em;
     background-color: white;
+    text-align: center;
 }
 
 table {
     display: inline-block;
     vertical-align: top;
+    text-align: left;
+}
+
+fieldset {
+    border: 0px;
+    padding: 0px;
 }
 
 /* CARDS */
