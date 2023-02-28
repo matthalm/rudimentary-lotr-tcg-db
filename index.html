@@ -14,20 +14,36 @@
 
 	<form class="controls" id="filters">
 
-	<p><strong>Sets</strong></p>
-
-	<fieldset>
-		<input type="checkbox" id="toggle-Fellowship" onclick="toggle('toggle-Fellowship','set-1')">
-		<label for="toggle-Fellowship">Fellowship:</label>
+	<table>
+		<tr>
+			<th>Fellowship Block</th>
+			<th>Towers Block</th>
+			<th>King Block</th>
+		</tr>
+		<tr>
+			<th>
+				<fieldset>
+					<input type="checkbox" id="toggle-Fellowship" onclick="toggle('toggle-Fellowship','set-1')">
+					<label for="toggle-Fellowship">Fellowship</label>
 		
-		<input type="checkbox" id="toggle-Moria" onclick="toggle('toggle-Moria','set-2')">
-		<label for="toggle-Moria">Moria:</label>
+					<input type="checkbox" id="toggle-Moria" onclick="toggle('toggle-Moria','set-2')">
+					<label for="toggle-Moria">Moria</label>
 		
-		<input type="checkbox" id="toggle-Realms" onclick="toggle('toggle-Realms','set-3')">
-		<label for="toggle-Realms">Realms:</label>
-	</fieldset>
-
-		<button id="Reset">Reset</button>
+					<input type="checkbox" id="toggle-Realms" onclick="toggle('toggle-Realms','set-3')">
+					<label for="toggle-Realms">Realms</label>
+				</fieldset>
+			</th>
+			<th>
+				
+			</th>
+			<th>
+				
+			</th>
+			<th>
+				<button id="Reset">Reset</button>
+			</th>
+		</tr>
+		
 	</form>
 
 	<div id="card-container">
