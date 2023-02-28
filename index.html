@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>LOTR CCG Database</title>
+
+    <link rel="stylesheet" href="css/main.css">
+
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+
+	<form class="controls" id="filters">
+
+	<p><strong>Sets</strong></p>
+
+	<ul>
+		<li><label for="toggle-Fellowship">Fellowship:</label>
+		<input type="checkbox" id="toggle-Fellowship" onclick="toggle('toggle-Fellowship','set-1')"></li>
+
+		<li><label for="toggle-Moria">Moria:</label>
+		<input type="checkbox" id="toggle-Moria" onclick="toggle('toggle-Moria','set-2')"></li>
+
+		<li><label for="toggle-Realms">Realms:</label>
+		<input type="checkbox" id="toggle-Realms" onclick="toggle('toggle-Realms','set-3')"></li>
+	</ul>
+
+		<button id="Reset">Reset</button>
+	</form>
+
+	<div id="card-container">
+
+		<div class="card set-1"><img width="320" height="440" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S003.0_card.jpg"></div>
+
+	</div>
+
+</body>
+</html>

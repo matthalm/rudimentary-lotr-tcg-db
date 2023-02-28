@@ -1,0 +1,23 @@
+
+
+/* CARDS */
+
+#card-container {
+    text-align: center;
+}
+
+#card-container .card {
+    display: none;
+   /* display: inline-block; */
+    margin: 20px;
+   /* max-width: 290px; */
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.35); 
+}
+
+#card-container .card img {
+    /*max-width: 100%;*/
+    height: auto !important;
+    /*margin: 0 -15px -20px -15px;*/
+}
