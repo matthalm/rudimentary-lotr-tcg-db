@@ -12,9 +12,14 @@
 </head>
 
 <body>
-	<div class="controls">
-	<form>
 
+	<div id="header">
+		<a href="">Rudimentary LotR TCG Database</a>
+	</div>
+
+	<div id="controls">
+
+		<form id="filters">
 		<fieldset style="background-color:#d9ead3">
 			<legend>Fellowship Block</legend>
 			<input type="checkbox" id="toggle-Fellowship"><label for="toggle-Fellowship">Fellowship of the Ring</label></br>
@@ -51,10 +56,49 @@
 			<input type="checkbox" id="toggle-Reflections"><label for="toggle-Reflections">Reflections</label></br>
 			<input type="checkbox" id="toggle-Expanded"><label for="toggle-Expanded">Expanded Middle Earth</label></br>
 			<input type="checkbox" id="toggle-Wraith"><label for="toggle-Wraith">The Wraith Collection</label></br>
-			<input type="checkbox" id="toggle-End"><label for="toggle-End">Age's End</label></br>
-
+			<input type="checkbox" id="toggle-End"><label for="toggle-End">Age's End</label>
 		</fieldset>
-		<button type="button" onclick="filterSets()">Filter Sets</button>
+		<fieldset>
+			<select id="select-culture">
+				<option value="">All Cultures</option>
+				<option value=".culture-dwarf">Dwarven</option>
+				<option value=".culture-elf">Elven</option>
+				<option value=".culture-gandalf">Gandalf</option>
+				<option value=".culture-smeagol">Gollum (Free Peoples)</option>
+				<option value=".culture-gondor">Gondor</option>
+				<option value=".culture-rohan">Rohan</option>
+				<option value=".culture-shire">Shire</option>
+				<option value=".culture-dunland">Dunland</option>
+				<option value=".culture-gollum">Gollum (Shadow)</option>
+				<option value=".culture-isengard">Isengard</option>
+				<option value=".culture-moria">Moria</option>
+				<option value=".culture-raider">Raider</option>
+				<option value=".culture-ringwraith">Ringwraith</option>
+				<option value=".culture-sauron">Sauron</option>
+				<option value=".culture-men">Men</option>
+				<option value=".culture-orc">Orc</option>
+				<option value=".culture-urukhai">Uruk-hai</option>
+				<option value=".culture-wraith">Wraith</option>
+			</select></br>
+			<select id="select-type">
+				<option value="">All Cardtypes</option>
+				<option value=".type-ally">Ally</option>
+				<option value=".type-artifact">Artifact</option>
+				<option value=".type-companion">Companion</option>
+				<option value=".type-condition">Condition</option>
+				<option value=".type-event">Event</option>
+				<option value=".type-follower">Follower</option>
+				<option value=".type-minion">Minion</option>
+				<option value=".type-possession">Possession</option>
+				<option value=".type-ring">Ring</option>
+				<option value=".type-site">Site</option>
+			</select></br>
+			<button type="button" onclick="filter()">Filter</button></br>
+			<button id="reset">Reset</button>
+		</fieldset>
+		</form>
+
+		<!--
 
 		<fieldset>
 			<legend>Cultures</legend>
@@ -94,7 +138,7 @@
 		</fieldset>
 		<button type="button" onclick="filterTypes()">Filter Cardtypes</button>
 
-	<button id="Reset">Reset</button>
+		-->
 
 	</div>
 
@@ -110,25 +154,25 @@
 		<div class="card set-1 culture-dwarf type-companion"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S007.0_card.jpg"></div>
 		<div class="card set-1 culture-dwarf type-possession"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S008.0_card.jpg"></div>
 		<div class="card set-1 culture-dwarf type-possession"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S009.0_card.jpg"></div>
-		<div class="card set-1"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S010.0_card.jpg"></div>
-		<div class="card set-1"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S011.0_card.jpg"></div>
-		<div class="card set-1"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S012.0_card.jpg"></div>
-		<div class="card set-1"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S013.0_card.jpg"></div>
-		<div class="card set-1"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S014.0_card.jpg"></div>
-		<div class="card set-1"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S015.0_card.jpg"></div>
-		<div class="card set-1"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S016.0_card.jpg"></div>
-		<div class="card set-1"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S017.0_card.jpg"></div>
-		<div class="card set-1"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S018.0_card.jpg"></div>
-		<div class="card set-1"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S019.0_card.jpg"></div>
-		<div class="card set-1"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S020.0_card.jpg"></div>
-		<div class="card set-1"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S021.0_card.jpg"></div>
-		<div class="card set-1"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S022.0_card.jpg"></div>
-		<div class="card set-1"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S023.0_card.jpg"></div>
-		<div class="card set-1"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S024.0_card.jpg"></div>
-		<div class="card set-1"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S025.0_card.jpg"></div>
-		<div class="card set-1"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S026.0_card.jpg"></div>
-		<div class="card set-1"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S027.0_card.jpg"></div>
-		<div class="card set-1"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S028.0_card.jpg"></div>
+		<div class="card set-1 culture-dwarf"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S010.0_card.jpg"></div>
+		<div class="card set-1 culture-dwarf"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S011.0_card.jpg"></div>
+		<div class="card set-1 culture-dwarf"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S012.0_card.jpg"></div>
+		<div class="card set-1 culture-dwarf"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S013.0_card.jpg"></div>
+		<div class="card set-1 culture-dwarf"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S014.0_card.jpg"></div>
+		<div class="card set-1 culture-dwarf"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S015.0_card.jpg"></div>
+		<div class="card set-1 culture-dwarf"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S016.0_card.jpg"></div>
+		<div class="card set-1 culture-dwarf"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S017.0_card.jpg"></div>
+		<div class="card set-1 culture-dwarf"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S018.0_card.jpg"></div>
+		<div class="card set-1 culture-dwarf"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S019.0_card.jpg"></div>
+		<div class="card set-1 culture-dwarf"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S020.0_card.jpg"></div>
+		<div class="card set-1 culture-dwarf"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S021.0_card.jpg"></div>
+		<div class="card set-1 culture-dwarf"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S022.0_card.jpg"></div>
+		<div class="card set-1 culture-dwarf"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S023.0_card.jpg"></div>
+		<div class="card set-1 culture-dwarf"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S024.0_card.jpg"></div>
+		<div class="card set-1 culture-dwarf"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S025.0_card.jpg"></div>
+		<div class="card set-1 culture-dwarf"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S026.0_card.jpg"></div>
+		<div class="card set-1 culture-dwarf"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S027.0_card.jpg"></div>
+		<div class="card set-1 culture-dwarf"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S028.0_card.jpg"></div>
 		<div class="card set-1"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S029.0_card.jpg"></div>
 		<div class="card set-1"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S030.0_card.jpg"></div>
 		<div class="card set-1"><img src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S031.0_card.jpg"></div>

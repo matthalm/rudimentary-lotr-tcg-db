@@ -1,6 +1,21 @@
-.controls {
-    position:sticky;
-    top: 0; 
+#header {
+    position: sticky;
+    top: 0;
+    display: block;
+    text-align: center;
+    font-family: Arial Narrow;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+}
+
+#header a {
+    color: black;
+}
+
+#controls {
     display: block;
     font-size: .8em;
     font-family: Arial Narrow;

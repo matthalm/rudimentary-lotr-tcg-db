@@ -5,32 +5,35 @@ function resetCards() {
     }
 }
 
-function filterSets() {
+function filter() {
 
     resetCards();
 
+    let selectedCulture = document.getElementById("select-culture").value;
+    let selectedType = document.getElementById("select-type").value;
+
     var setList = [];
- 
-    if (document.getElementById("toggle-Fellowship").checked == true) {setList.push(".set-1");}
-    if (document.getElementById("toggle-Mines").checked == true) {setList.push(".set-2");}
-    if (document.getElementById("toggle-Realms").checked == true) {setList.push(".set-3");}
-    if (document.getElementById("toggle-Towers").checked == true) {setList.push(".set-4");}
-    if (document.getElementById("toggle-Battle").checked == true) {setList.push(".set-5");}
-    if (document.getElementById("toggle-Ents").checked == true) {setList.push(".set-6");}
-    if (document.getElementById("toggle-King").checked == true) {setList.push(".set-7");}
-    if (document.getElementById("toggle-Siege").checked == true) {setList.push(".set-8");}
-    if (document.getElementById("toggle-Reflections").checked == true) {setList.push(".set-9");}
-    if (document.getElementById("toggle-Doom").checked == true) {setList.push(".set-10");}
-    if (document.getElementById("toggle-Shadows").checked == true) {setList.push(".set-11");}
-    if (document.getElementById("toggle-Rider").checked == true) {setList.push(".set-12");}
-    if (document.getElementById("toggle-Bloodlines").checked == true) {setList.push(".set-13");}
-    if (document.getElementById("toggle-Expanded").checked == true) {setList.push(".set-14");}
-    if (document.getElementById("toggle-Hunters").checked == true) {setList.push(".set-15");}
-    if (document.getElementById("toggle-Wraith").checked == true) {setList.push(".set-16");}
-    if (document.getElementById("toggle-Rise").checked == true) {setList.push(".set-17");}
-    if (document.getElementById("toggle-Treachery").checked == true) {setList.push(".set-18");}
-    if (document.getElementById("toggle-End").checked == true) {setList.push(".set-19");}
-    if (document.getElementById("toggle-Past").checked == true) {setList.push(".set-v1");}
+
+    if (document.getElementById("toggle-Fellowship").checked == true) {setList.push(".set-1"+selectedCulture+selectedType);}
+    if (document.getElementById("toggle-Mines").checked == true) {setList.push(".set-2"+selectedCulture+selectedType);}
+    if (document.getElementById("toggle-Realms").checked == true) {setList.push(".set-3"+selectedCulture+selectedType);}
+    if (document.getElementById("toggle-Towers").checked == true) {setList.push(".set-4"+selectedCulture+selectedType);}
+    if (document.getElementById("toggle-Battle").checked == true) {setList.push(".set-5"+selectedCulture+selectedType);}
+    if (document.getElementById("toggle-Ents").checked == true) {setList.push(".set-6"+selectedCulture+selectedType);}
+    if (document.getElementById("toggle-King").checked == true) {setList.push(".set-7"+selectedCulture+selectedType);}
+    if (document.getElementById("toggle-Siege").checked == true) {setList.push(".set-8"+selectedCulture+selectedType);}
+    if (document.getElementById("toggle-Reflections").checked == true) {setList.push(".set-9"+selectedCulture+selectedType);}
+    if (document.getElementById("toggle-Doom").checked == true) {setList.push(".set-10"+selectedCulture+selectedType);}
+    if (document.getElementById("toggle-Shadows").checked == true) {setList.push(".set-11"+selectedCulture+selectedType);}
+    if (document.getElementById("toggle-Rider").checked == true) {setList.push(".set-12"+selectedCulture+selectedType);}
+    if (document.getElementById("toggle-Bloodlines").checked == true) {setList.push(".set-13"+selectedCulture+selectedType);}
+    if (document.getElementById("toggle-Expanded").checked == true) {setList.push(".set-14"+selectedCulture+selectedType);}
+    if (document.getElementById("toggle-Hunters").checked == true) {setList.push(".set-15"+selectedCulture+selectedType);}
+    if (document.getElementById("toggle-Wraith").checked == true) {setList.push(".set-16"+selectedCulture+selectedType);}
+    if (document.getElementById("toggle-Rise").checked == true) {setList.push(".set-17"+selectedCulture+selectedType);}
+    if (document.getElementById("toggle-Treachery").checked == true) {setList.push(".set-18"+selectedCulture+selectedType);}
+    if (document.getElementById("toggle-End").checked == true) {setList.push(".set-19"+selectedCulture+selectedType);}
+    if (document.getElementById("toggle-Past").checked == true) {setList.push(".set-v1"+selectedCulture+selectedType);}
 
     let checkedSets = setList.join(', ');
     let cards = document.querySelectorAll(checkedSets);
@@ -40,6 +43,7 @@ function filterSets() {
     }
 }
 
+/*
 function filterCultures() {
 
     resetCards();
@@ -72,7 +76,9 @@ function filterCultures() {
         cards[i].style.display = "inline-block";
     }
 }
+*/
 
+/*
 function filterTypes() {
 
     resetCards();
@@ -98,10 +104,4 @@ function filterTypes() {
     }
 }
 
-function headerClicked(headerObj) {
-     $(headerObj).parent().find('.filters').slideDown(500);
-}
-
-function headerClickedUp(headerObj) {
-    $(headerObj).parent().find('.filters').slideUp(500);
-}
+*/
