@@ -9,6 +9,7 @@
     margin: 10px;
     padding: 10px;
     background-color: white;
+    z-index: 10;
 }
 
 #header a {
@@ -36,6 +37,7 @@ legend {
     border: 1px solid;
     padding: 2px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 table td {
@@ -43,16 +45,6 @@ table td {
 }
 
 /* CARDS */
-
-.card img {
-    width: 250px;
-    height: 350px;
-}
-
-.lcard img {
-    width: 350px;
-    height: 250px;
-}
 
 #card-container {
     text-align: center;
@@ -67,27 +59,32 @@ table td {
 }
 
 #card-container .card img {
-    height: auto !important;
+    width: 250px;
+    height: 350px;
     margin: 0 0 -4px 0;
 }
 
 #card-container .lcard {
+    width: 350px;
+    height: 250px;
+    display: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.35); 
+      margin-top: 60px;
+      margin-bottom: 60px;
+      margin-left: -40px;
+      margin-right: -40px;
     -webkit-transform: rotate(270deg);
     -moz-transform: rotate(270deg);
     -o-transform: rotate(270deg);
     -ms-transform: rotate(270deg);
     transform: rotate(270deg);
-    display: none;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.35); 
-      margin-top: 60px;
-      margin-bottom: 60px;
-      margin-left: -40px;
-      margin-right: -40px;
+    z-index: 1;
 }
 
 #card-container .lcard img {
-    height: auto !important;
+    width: 350px;
+    height: 250px;
     margin: 0 0 -4px 0;
 }

@@ -1,75 +1,77 @@
 function resetCards() {
-    let cards = document.getElementsByClassName("card");
+    let cards = document.querySelectorAll(".card, .lcard")
     for (let i = 0; i < cards.length; i++) {
             cards[i].style.display = "none"
     }
 }
 
+function format_fellowship() {
+    document.getElementById('toggle-Fellowship').checked = true;
+    document.getElementById('toggle-Mines').checked = true;
+    document.getElementById('toggle-Realms').checked = true;
+    document.getElementById('toggle-Past').checked = true;
+}
+
+function format_towers() {
+    document.getElementById('toggle-Towers').checked = true;
+    document.getElementById('toggle-Battle').checked = true;
+    document.getElementById('toggle-Ents').checked = true;
+}
+
+function format_king() {
+    document.getElementById('toggle-King').checked = true;
+    document.getElementById('toggle-Siege').checked = true;
+    document.getElementById('toggle-Doom').checked = true;
+}
+
+function format_war() {
+    document.getElementById('toggle-Shadows').checked = true;
+    document.getElementById('toggle-Rider').checked = true;
+    document.getElementById('toggle-Bloodlines').checked = true;
+}
+
+function format_hunters() {
+    document.getElementById('toggle-Hunters').checked = true;
+    document.getElementById('toggle-Rise').checked = true;
+    document.getElementById('toggle-Treachery').checked = true;
+}
+
+function format_other() {
+    document.getElementById('toggle-Reflections').checked = true;
+    document.getElementById('toggle-Expanded').checked = true;
+    document.getElementById('toggle-Wraith').checked = true;
+    document.getElementById('toggle-End').checked = true;
+}
+
 function format_towersStandard() {
-    document.getElementById('toggle-Fellowship').checked=!document.getElementById('toggle-Fellowship').checked;
-    document.getElementById('toggle-Mines').checked=!document.getElementById('toggle-Mines').checked;
-    document.getElementById('toggle-Realms').checked=!document.getElementById('toggle-Realms').checked;
-    document.getElementById('toggle-Towers').checked=!document.getElementById('toggle-Towers').checked;
-    document.getElementById('toggle-Battle').checked=!document.getElementById('toggle-Battle').checked;
-    document.getElementById('toggle-Ents').checked=!document.getElementById('toggle-Ents').checked;
+    document.getElementById('toggle-Fellowship').checked = true;
+    document.getElementById('toggle-Mines').checked = true;
+    document.getElementById('toggle-Realms').checked = true;
+    format_towers();
 }
 
 function format_movieBlock() {
-    document.getElementById('toggle-Fellowship').checked=!document.getElementById('toggle-Fellowship').checked;
-    document.getElementById('toggle-Mines').checked=!document.getElementById('toggle-Mines').checked;
-    document.getElementById('toggle-Realms').checked=!document.getElementById('toggle-Realms').checked;
-    document.getElementById('toggle-Towers').checked=!document.getElementById('toggle-Towers').checked;
-    document.getElementById('toggle-Battle').checked=!document.getElementById('toggle-Battle').checked;
-    document.getElementById('toggle-Ents').checked=!document.getElementById('toggle-Ents').checked;
-    document.getElementById('toggle-King').checked=!document.getElementById('toggle-King').checked;
-    document.getElementById('toggle-Siege').checked=!document.getElementById('toggle-Siege').checked;
-    document.getElementById('toggle-Doom').checked=!document.getElementById('toggle-Doom').checked;
+    format_towersStandard();
+    format_king();
 }
 
 function format_warStandard() {
-    document.getElementById('toggle-Towers').checked=!document.getElementById('toggle-Towers').checked;
-    document.getElementById('toggle-Battle').checked=!document.getElementById('toggle-Battle').checked;
-    document.getElementById('toggle-Ents').checked=!document.getElementById('toggle-Ents').checked;
-    document.getElementById('toggle-King').checked=!document.getElementById('toggle-King').checked;
-    document.getElementById('toggle-Siege').checked=!document.getElementById('toggle-Siege').checked;
-    document.getElementById('toggle-Doom').checked=!document.getElementById('toggle-Doom').checked;
-    document.getElementById('toggle-Shadows').checked=!document.getElementById('toggle-Shadows').checked;
-    document.getElementById('toggle-Rider').checked=!document.getElementById('toggle-Rider').checked;
-    document.getElementById('toggle-Bloodlines').checked=!document.getElementById('toggle-Bloodlines').checked;
+    format_towers();
+    format_king();
+    format_war();
 }
 
 function format_finalStandard() {
-    document.getElementById('toggle-King').checked=!document.getElementById('toggle-King').checked;
-    document.getElementById('toggle-Siege').checked=!document.getElementById('toggle-Siege').checked;
-    document.getElementById('toggle-Doom').checked=!document.getElementById('toggle-Doom').checked;
-    document.getElementById('toggle-Shadows').checked=!document.getElementById('toggle-Shadows').checked;
-    document.getElementById('toggle-Rider').checked=!document.getElementById('toggle-Rider').checked;
-    document.getElementById('toggle-Bloodlines').checked=!document.getElementById('toggle-Bloodlines').checked;
-    document.getElementById('toggle-Hunters').checked=!document.getElementById('toggle-Hunters').checked;
-    document.getElementById('toggle-Rise').checked=!document.getElementById('toggle-Rise').checked;
-    document.getElementById('toggle-Treachery').checked=!document.getElementById('toggle-Treachery').checked;
+    format_king();
+    format_war();
+    format_hunters();
 }
 
 function format_open() {
-    document.getElementById('toggle-Fellowship').checked=!document.getElementById('toggle-Fellowship').checked;
-    document.getElementById('toggle-Mines').checked=!document.getElementById('toggle-Mines').checked;
-    document.getElementById('toggle-Realms').checked=!document.getElementById('toggle-Realms').checked;
-    document.getElementById('toggle-Towers').checked=!document.getElementById('toggle-Towers').checked;
-    document.getElementById('toggle-Battle').checked=!document.getElementById('toggle-Battle').checked;
-    document.getElementById('toggle-Ents').checked=!document.getElementById('toggle-Ents').checked;
-    document.getElementById('toggle-King').checked=!document.getElementById('toggle-King').checked;
-    document.getElementById('toggle-Siege').checked=!document.getElementById('toggle-Siege').checked;
-    document.getElementById('toggle-Doom').checked=!document.getElementById('toggle-Doom').checked;
-    document.getElementById('toggle-Shadows').checked=!document.getElementById('toggle-Shadows').checked;
-    document.getElementById('toggle-Rider').checked=!document.getElementById('toggle-Rider').checked;
-    document.getElementById('toggle-Bloodlines').checked=!document.getElementById('toggle-Bloodlines').checked;
-    document.getElementById('toggle-Hunters').checked=!document.getElementById('toggle-Hunters').checked;
-    document.getElementById('toggle-Rise').checked=!document.getElementById('toggle-Rise').checked;
-    document.getElementById('toggle-Treachery').checked=!document.getElementById('toggle-Treachery').checked;
-    document.getElementById('toggle-Reflections').checked=!document.getElementById('toggle-Reflections').checked;
-    document.getElementById('toggle-Expanded').checked=!document.getElementById('toggle-Expanded').checked;
-    document.getElementById('toggle-Wraith').checked=!document.getElementById('toggle-Wraith').checked;
-    document.getElementById('toggle-End').checked=!document.getElementById('toggle-End').checked;
+    format_movieBlock();
+    format_war();
+    format_hunters();
+    format_other();
 }
 
 function filter() {
@@ -109,66 +111,3 @@ function filter() {
         cards[i].style.display = "inline-block";
     }
 }
-
-/*
-function filterCultures() {
-
-    resetCards();
-
-    var cultureList = [];
-
-    if (document.getElementById("toggle-dwarf").checked == true) {cultureList.push(".culture-dwarf");}
-    if (document.getElementById("toggle-elf").checked == true) {cultureList.push(".culture-elf");}
-    if (document.getElementById("toggle-gandalf").checked == true) {cultureList.push(".culture-gandalf");}
-    if (document.getElementById("toggle-smeagol").checked == true) {cultureList.push(".culture-smeagol");}
-    if (document.getElementById("toggle-gondor").checked == true) {cultureList.push(".culture-gondor");}
-    if (document.getElementById("toggle-rohan").checked == true) {cultureList.push(".culture-rohan");}
-    if (document.getElementById("toggle-shire").checked == true) {cultureList.push(".culture-sire");}
-    if (document.getElementById("toggle-dunland").checked == true) {cultureList.push(".culture-dunland");}
-    if (document.getElementById("toggle-gollum").checked == true) {cultureList.push(".culture-gollum");}
-    if (document.getElementById("toggle-isengard").checked == true) {cultureList.push(".culture-isengard");}
-    if (document.getElementById("toggle-moria").checked == true) {cultureList.push(".culture-moria");}
-    if (document.getElementById("toggle-raider").checked == true) {cultureList.push(".culture-raider");}
-    if (document.getElementById("toggle-ringwraith").checked == true) {cultureList.push(".culture-ringwraith");}
-    if (document.getElementById("toggle-sauron").checked == true) {cultureList.push(".culture-sauron");}
-    if (document.getElementById("toggle-men").checked == true) {cultureList.push(".culture-men");}
-    if (document.getElementById("toggle-orc").checked == true) {cultureList.push(".culture-orc");}
-    if (document.getElementById("toggle-urukhai").checked == true) {cultureList.push(".culture-urukhai");}
-    if (document.getElementById("toggle-wraith").checked == true) {cultureList.push(".culture-wraith");}
-
-    let checkedCultures = cultureList.join(', ');
-    let cards = document.querySelectorAll(checkedCultures);
-
-    for (let i = 0; i < cards.length; i++) {
-        cards[i].style.display = "inline-block";
-    }
-}
-*/
-
-/*
-function filterTypes() {
-
-    resetCards();
-
-    var typeList = [];
-
-    if (document.getElementById("toggle-ally").checked == true) {typeList.push(".type-ally");}
-    if (document.getElementById("toggle-artifact").checked == true) {typeList.push(".type-artifact");}
-    if (document.getElementById("toggle-companion").checked == true) {typeList.push(".type-companion");}
-    if (document.getElementById("toggle-condition").checked == true) {typeList.push(".type-condition");}
-    if (document.getElementById("toggle-event").checked == true) {typeList.push(".type-event");}
-    if (document.getElementById("toggle-follower").checked == true) {typeList.push(".type-follower");}
-    if (document.getElementById("toggle-minion").checked == true) {typeList.push(".type-minion");}
-    if (document.getElementById("toggle-possession").checked == true) {typeList.push(".type-possession");}
-    if (document.getElementById("toggle-ring").checked == true) {typeList.push(".type-ring");}
-    if (document.getElementById("toggle-site").checked == true) {typeList.push(".type-site");}
-
-    let checkedTypes = typeList.join(', ');
-    let cards = document.querySelectorAll(checkedTypes);
-
-    for (let i = 0; i < cards.length; i++) {
-        cards[i].style.display = "inline-block";
-    }
-}
-
-*/
