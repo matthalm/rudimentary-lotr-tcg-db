@@ -13,11 +13,11 @@
 
 <body>
 
-	<div id="header">
+	<div id="header"> <!-- FLOATING HEADER AT TOP OF PAGE -->
 		<a href="">Rudimentary LotR TCG Database</a>
 	</div>
 
-	<div id="controls">
+	<div id="controls"> <!-- CHECKBOXES AND DROPDOWNS TO FILTER CARDS -->
 
 		<form id="filters">
 		<fieldset style="background-color:#d9ead3">
@@ -93,14 +93,14 @@
 				<option value=".type-ring">Ring</option>
 				<option value=".type-site">Site</option>
 			</select></br>
-			<button type="button" onclick="filter()">Filter</button><br>
+			<button type="button" onclick="filter()">Filter</button>
 			<button id="reset">Reset</button>
 		</fieldset>
 		</form>
 
 		<!--
 
-		<form id="formats">
+		<form id="formats"> 
 		<fieldset>
 			<legend>Formats</legend>
 			<button type="button" onclick="format_towersStandard()">Towers Standard</button>
@@ -149,96 +149,96 @@
 		<div class="card set-1 culture-dwarf type-ally"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S027.0_card.jpg"></div>
 		<div class="card set-1 culture-dwarf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S028.0_card.jpg"></div>
 		<div class="card set-1 culture-elf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S029.0_card.jpg"></div>
-		<div class="card set-1 culture-elf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S030.0_card.jpg"></div>
-		<div class="card set-1 culture-elf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S031.0_card.jpg"></div>
-		<div class="card set-1 culture-elf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S032.0_card.jpg"></div>
-		<div class="card set-1 culture-elf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S033.0_card.jpg"></div>
-		<div class="card set-1 culture-elf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S034.0_card.jpg"></div>
-		<div class="card set-1 culture-elf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S035.0_card.jpg"></div>
-		<div class="card set-1 culture-elf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S036.0_card.jpg"></div>
-		<div class="card set-1 culture-elf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S037.0_card.jpg"></div>
-		<div class="card set-1 culture-elf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S038.0_card.jpg"></div>
-		<div class="card set-1 culture-elf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S039.0_card.jpg"></div>
-		<div class="card set-1 culture-elf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S040.0_card.jpg"></div>
-		<div class="card set-1 culture-elf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S041.0_card.jpg"></div>
-		<div class="card set-1 culture-elf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S042.0_card.jpg"></div>
-		<div class="card set-1 culture-elf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S043.0_card.jpg"></div>
-		<div class="card set-1 culture-elf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S044.0_card.jpg"></div>
-		<div class="card set-1 culture-elf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S045.0_card.jpg"></div>
-		<div class="card set-1 culture-elf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S046.0_card.jpg"></div>
-		<div class="card set-1 culture-elf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S047.0_card.jpg"></div>
-		<div class="card set-1 culture-elf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S048.0_card.jpg"></div>
-		<div class="card set-1 culture-elf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S049.0_card.jpg"></div>
-		<div class="card set-1 culture-elf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S050.0_card.jpg"></div>
-		<div class="card set-1 culture-elf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S051.0_card.jpg"></div>
-		<div class="card set-1 culture-elf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S052.0_card.jpg"></div>
-		<div class="card set-1 culture-elf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S053.0_card.jpg"></div>
-		<div class="card set-1 culture-elf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S054.0_card.jpg"></div>
-		<div class="card set-1 culture-elf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S055.0_card.jpg"></div>
-		<div class="card set-1 culture-elf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S056.0_card.jpg"></div>
-		<div class="card set-1 culture-elf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S057.0_card.jpg"></div>
-		<div class="card set-1 culture-elf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S058.0_card.jpg"></div>
-		<div class="card set-1 culture-elf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S059.0_card.jpg"></div>
-		<div class="card set-1 culture-elf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S060.0_card.jpg"></div>
-		<div class="card set-1 culture-elf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S061.0_card.jpg"></div>
-		<div class="card set-1 culture-elf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S062.0_card.jpg"></div>
-		<div class="card set-1 culture-elf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S063.0_card.jpg"></div>
-		<div class="card set-1 culture-elf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S064.0_card.jpg"></div>
-		<div class="card set-1 culture-elf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S065.0_card.jpg"></div>
-		<div class="card set-1 culture-elf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S066.0_card.jpg"></div>
-		<div class="card set-1 culture-elf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S067.0_card.jpg"></div>
-		<div class="card set-1 culture-elf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S068.0_card.jpg"></div>
-		<div class="card set-1 culture-gandalf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S069.0_card.jpg"></div>
-		<div class="card set-1 culture-gandalf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S070.0_card.jpg"></div>
-		<div class="card set-1 culture-gandalf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S071.0_card.jpg"></div>
-		<div class="card set-1 culture-gandalf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S072.0_card.jpg"></div>
-		<div class="card set-1 culture-gandalf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S073.0_card.jpg"></div>
-		<div class="card set-1 culture-gandalf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S074.0_card.jpg"></div>
-		<div class="card set-1 culture-gandalf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S075.0_card.jpg"></div>
-		<div class="card set-1 culture-gandalf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S076.0_card.jpg"></div>
-		<div class="card set-1 culture-gandalf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S077.0_card.jpg"></div>
-		<div class="card set-1 culture-gandalf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S078.0_card.jpg"></div>
-		<div class="card set-1 culture-gandalf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S079.0_card.jpg"></div>
-		<div class="card set-1 culture-gandalf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S080.0_card.jpg"></div>
-		<div class="card set-1 culture-gandalf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S081.0_card.jpg"></div>
-		<div class="card set-1 culture-gandalf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S082.0_card.jpg"></div>
-		<div class="card set-1 culture-gandalf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S083.0_card.jpg"></div>
-		<div class="card set-1 culture-gandalf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S084.0_card.jpg"></div>
-		<div class="card set-1 culture-gandalf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S085.0_card.jpg"></div>
-		<div class="card set-1 culture-gandalf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S086.0_card.jpg"></div>
-		<div class="card set-1 culture-gandalf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S087.0_card.jpg"></div>
-		<div class="card set-1 culture-gondor"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S088.0_card.jpg"></div>
-		<div class="card set-1 culture-gondor"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S089.0_card.jpg"></div>
-		<div class="card set-1 culture-gondor"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S090.0_card.jpg"></div>
-		<div class="card set-1 culture-gondor"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S091.0_card.jpg"></div>
-		<div class="card set-1 culture-gondor"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S092.0_card.jpg"></div>
-		<div class="card set-1 culture-gondor"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S093.0_card.jpg"></div>
-		<div class="card set-1 culture-gondor"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S094.0_card.jpg"></div>
-		<div class="card set-1 culture-gondor"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S095.0_card.jpg"></div>
-		<div class="card set-1 culture-gondor"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S096.0_card.jpg"></div>
-		<div class="card set-1 culture-gondor"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S097.0_card.jpg"></div>
-		<div class="card set-1 culture-gondor"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S098.0_card.jpg"></div>
-		<div class="card set-1 culture-gondor"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S099.0_card.jpg"></div>
-		<div class="card set-1 culture-gondor"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S100.0_card.jpg"></div>
-		<div class="card set-1 culture-gondor"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S101.0_card.jpg"></div>
-		<div class="card set-1 culture-gondor"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S102.0_card.jpg"></div>
-		<div class="card set-1 culture-gondor"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S103.0_card.jpg"></div>
-		<div class="card set-1 culture-gondor"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S104.0_card.jpg"></div>
-		<div class="card set-1 culture-gondor"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S105.0_card.jpg"></div>
-		<div class="card set-1 culture-gondor"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S106.0_card.jpg"></div>
-		<div class="card set-1 culture-gondor"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S107.0_card.jpg"></div>
-		<div class="card set-1 culture-gondor"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S108.0_card.jpg"></div>
-		<div class="card set-1 culture-gondor"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S109.0_card.jpg"></div>
-		<div class="card set-1 culture-gondor"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S110.0_card.jpg"></div>
-		<div class="card set-1 culture-gondor"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S111.0_card.jpg"></div>
-		<div class="card set-1 culture-gondor"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S112.0_card.jpg"></div>
-		<div class="card set-1 culture-gondor"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S113.0_card.jpg"></div>
-		<div class="card set-1 culture-gondor"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S114.0_card.jpg"></div>
-		<div class="card set-1 culture-gondor"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S115.0_card.jpg"></div>
-		<div class="card set-1 culture-gondor"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S116.0_card.jpg"></div>
-		<div class="card set-1 culture-gondor"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S117.0_card.jpg"></div>
-		<div class="card set-1 culture-gondor"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S118.0_card.jpg"></div>
-		<div class="card set-1 culture-gondor"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S119.0_card.jpg"></div>
+		<div class="card set-1 culture-elf type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S030.0_card.jpg"></div>
+		<div class="card set-1 culture-elf type-possession"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S031.0_card.jpg"></div>
+		<div class="card set-1 culture-elf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S032.0_card.jpg"></div>
+		<div class="card set-1 culture-elf type-possession"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S033.0_card.jpg"></div>
+		<div class="card set-1 culture-elf type-ally"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S034.0_card.jpg"></div>
+		<div class="card set-1 culture-elf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S035.0_card.jpg"></div>
+		<div class="card set-1 culture-elf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S036.0_card.jpg"></div>
+		<div class="card set-1 culture-elf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S037.0_card.jpg"></div>
+		<div class="card set-1 culture-elf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S038.0_card.jpg"></div>
+		<div class="card set-1 culture-elf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S039.0_card.jpg"></div>
+		<div class="card set-1 culture-elf type-ally"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S040.0_card.jpg"></div>
+		<div class="card set-1 culture-elf type-possession"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S041.0_card.jpg"></div>
+		<div class="card set-1 culture-elf type-possession"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S042.0_card.jpg"></div>
+		<div class="card set-1 culture-elf type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S043.0_card.jpg"></div>
+		<div class="card set-1 culture-elf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S044.0_card.jpg"></div>
+		<div class="card set-1 culture-elf type-ally"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S045.0_card.jpg"></div>
+		<div class="card set-1 culture-elf type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S046.0_card.jpg"></div>
+		<div class="card set-1 culture-elf type-possession"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S047.0_card.jpg"></div>
+		<div class="card set-1 culture-elf type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S048.0_card.jpg"></div>
+		<div class="card set-1 culture-elf type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S049.0_card.jpg"></div>
+		<div class="card set-1 culture-elf type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S050.0_card.jpg"></div>
+		<div class="card set-1 culture-elf type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S051.0_card.jpg"></div>
+		<div class="card set-1 culture-elf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S052.0_card.jpg"></div>
+		<div class="card set-1 culture-elf type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S053.0_card.jpg"></div>
+		<div class="card set-1 culture-elf type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S054.0_card.jpg"></div>
+		<div class="card set-1 culture-elf type-possession"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S055.0_card.jpg"></div>
+		<div class="card set-1 culture-elf type-ally"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S056.0_card.jpg"></div>
+		<div class="card set-1 culture-elf type-ally"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S057.0_card.jpg"></div>
+		<div class="card set-1 culture-elf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S058.0_card.jpg"></div>
+		<div class="card set-1 culture-elf type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S059.0_card.jpg"></div>
+		<div class="card set-1 culture-elf type-ally"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S060.0_card.jpg"></div>
+		<div class="card set-1 culture-elf type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S061.0_card.jpg"></div>
+		<div class="card set-1 culture-elf type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S062.0_card.jpg"></div>
+		<div class="card set-1 culture-elf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S063.0_card.jpg"></div>
+		<div class="card set-1 culture-elf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S064.0_card.jpg"></div>
+		<div class="card set-1 culture-elf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S065.0_card.jpg"></div>
+		<div class="card set-1 culture-elf type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S066.0_card.jpg"></div>
+		<div class="card set-1 culture-elf type-ally"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S067.0_card.jpg"></div>
+		<div class="card set-1 culture-elf type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S068.0_card.jpg"></div>
+		<div class="card set-1 culture-gandalf type-ally"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S069.0_card.jpg"></div>
+		<div class="card set-1 culture-gandalf type-ally"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S070.0_card.jpg"></div>
+		<div class="card set-1 culture-gandalf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S071.0_card.jpg"></div>
+		<div class="card set-1 culture-gandalf type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S072.0_card.jpg"></div>
+		<div class="card set-1 culture-gandalf type-possession"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S073.0_card.jpg"></div>
+		<div class="card set-1 culture-gandalf type-possession"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S074.0_card.jpg"></div>
+		<div class="card set-1 culture-gandalf type-possession"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S075.0_card.jpg"></div>
+		<div class="card set-1 culture-gandalf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S076.0_card.jpg"></div>
+		<div class="card set-1 culture-gandalf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S077.0_card.jpg"></div>
+		<div class="card set-1 culture-gandalf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S078.0_card.jpg"></div>
+		<div class="card set-1 culture-gandalf type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S079.0_card.jpg"></div>
+		<div class="card set-1 culture-gandalf type-ally"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S080.0_card.jpg"></div>
+		<div class="card set-1 culture-gandalf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S081.0_card.jpg"></div>
+		<div class="card set-1 culture-gandalf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S082.0_card.jpg"></div>
+		<div class="card set-1 culture-gandalf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S083.0_card.jpg"></div>
+		<div class="card set-1 culture-gandalf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S084.0_card.jpg"></div>
+		<div class="card set-1 culture-gandalf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S085.0_card.jpg"></div>
+		<div class="card set-1 culture-gandalf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S086.0_card.jpg"></div>
+		<div class="card set-1 culture-gandalf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S087.0_card.jpg"></div>
+		<div class="card set-1 culture-gondor type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S088.0_card.jpg"></div>
+		<div class="card set-1 culture-gondor type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S089.0_card.jpg"></div>
+		<div class="card set-1 culture-gondor type-possession"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S090.0_card.jpg"></div>
+		<div class="card set-1 culture-gondor type-possession"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S091.0_card.jpg"></div>
+		<div class="card set-1 culture-gondor type-possession"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S092.0_card.jpg"></div>
+		<div class="card set-1 culture-gondor type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S093.0_card.jpg"></div>
+		<div class="card set-1 culture-gondor type-possession"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S094.0_card.jpg"></div>
+		<div class="card set-1 culture-gondor type-possession"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S095.0_card.jpg"></div>
+		<div class="card set-1 culture-gondor type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S096.0_card.jpg"></div>
+		<div class="card set-1 culture-gondor type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S097.0_card.jpg"></div>
+		<div class="card set-1 culture-gondor type-possession"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S098.0_card.jpg"></div>
+		<div class="card set-1 culture-gondor type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S099.0_card.jpg"></div>
+		<div class="card set-1 culture-gondor type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S100.0_card.jpg"></div>
+		<div class="card set-1 culture-gondor type-possession"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S101.0_card.jpg"></div>
+		<div class="card set-1 culture-gondor type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S102.0_card.jpg"></div>
+		<div class="card set-1 culture-gondor type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S103.0_card.jpg"></div>
+		<div class="card set-1 culture-gondor type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S104.0_card.jpg"></div>
+		<div class="card set-1 culture-gondor type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S105.0_card.jpg"></div>
+		<div class="card set-1 culture-gondor type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S106.0_card.jpg"></div>
+		<div class="card set-1 culture-gondor type-possession"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S107.0_card.jpg"></div>
+		<div class="card set-1 culture-gondor type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S108.0_card.jpg"></div>
+		<div class="card set-1 culture-gondor type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S109.0_card.jpg"></div>
+		<div class="card set-1 culture-gondor type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S110.0_card.jpg"></div>
+		<div class="card set-1 culture-gondor type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S111.0_card.jpg"></div>
+		<div class="card set-1 culture-gondor type-possession"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S112.0_card.jpg"></div>
+		<div class="card set-1 culture-gondor type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S113.0_card.jpg"></div>
+		<div class="card set-1 culture-gondor type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S114.0_card.jpg"></div>
+		<div class="card set-1 culture-gondor type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S115.0_card.jpg"></div>
+		<div class="card set-1 culture-gondor type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S116.0_card.jpg"></div>
+		<div class="card set-1 culture-gondor type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S117.0_card.jpg"></div>
+		<div class="card set-1 culture-gondor type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S118.0_card.jpg"></div>
+		<div class="card set-1 culture-gondor type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S119.0_card.jpg"></div>
 		<div class="card set-1 culture-isengard"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S120.0_card.jpg"></div>
 		<div class="card set-1 culture-isengard"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S121.0_card.jpg"></div>
 		<div class="card set-1 culture-isengard"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S122.0_card.jpg"></div>
@@ -483,8 +483,8 @@
 		<div class="lcard set-1 culture-na type-site"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S361.0_card.jpg"></div>
 		<div class="lcard set-1 culture-na type-site"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S362.0_card.jpg"></div>
 		<div class="lcard set-1 culture-na type-site"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S363.0_card.jpg"></div>
-		<div class="card set-1 culture-gandalf"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S364.0_card.jpg"></div>
-		<div class="card set-1 culture-gondor"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S365.0_card.jpg"></div>
+		<div class="card set-1 culture-gandalf type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S364.0_card.jpg"></div>
+		<div class="card set-1 culture-gondor type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN01S365.0_card.jpg"></div>
 
 		<!-- SET 2: MORIA -->
 

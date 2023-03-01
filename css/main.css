@@ -40,6 +40,12 @@ legend {
     cursor: pointer;
 }
 
+select, button {
+    padding: 2px;
+    margin: 2px;
+    font-family: Arial Narrow;
+}
+
 table td {
     vertical-align: top;
 }
