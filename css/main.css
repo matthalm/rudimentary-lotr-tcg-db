@@ -1,6 +1,6 @@
 .controls {
+    position:sticky;
     top: 0; 
-    position: sticky;
     display: block;
     font-size: .9em;
     background-color: white;
