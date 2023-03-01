@@ -2,7 +2,8 @@
     position:sticky;
     top: 0; 
     display: block;
-    font-size: .9em;
+    font-size: .8em;
+    font-family: Arial Narrow;
     background-color: white;
     text-align: center;
 }
