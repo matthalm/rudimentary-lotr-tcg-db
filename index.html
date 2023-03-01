@@ -22,40 +22,40 @@
 		<form id="filters">
 		<fieldset style="background-color:#d9ead3">
 			<legend>Fellowship Block</legend>
-			<input type="checkbox" id="toggle-Fellowship"><label for="toggle-Fellowship">Fellowship of the Ring</label></br>
-			<input type="checkbox" id="toggle-Mines"><label for="toggle-Mines">Mines of Moria</label></br>
-			<input type="checkbox" id="toggle-Realms"><label for="toggle-Realms">Realms of the Elf-Lords</label></br>
-			<input type="checkbox" id="toggle-Past"><label for="toggle-Past">Shadow of the Past (V1)</label></br>
+			<input type="checkbox" id="toggle-Fellowship"><label for="toggle-Fellowship">Fellowship of the Ring</label><br>
+			<input type="checkbox" id="toggle-Mines"><label for="toggle-Mines">Mines of Moria</label><br>
+			<input type="checkbox" id="toggle-Realms"><label for="toggle-Realms">Realms of the Elf-Lords</label><br>
+			<input type="checkbox" id="toggle-Past"><label for="toggle-Past">Shadow of the Past (V1)</label><br>
 		</fieldset>
 		<fieldset style="background-color:#cfe2f3">
 			<legend>Towers Block</legend>
-			<input type="checkbox" id="toggle-Towers"><label for="toggle-Towers">The Two Towers</label></br>
-			<input type="checkbox" id="toggle-Battle"><label for="toggle-Battle">Battle of Helm's Deep</label></br>
+			<input type="checkbox" id="toggle-Towers"><label for="toggle-Towers">The Two Towers</label><br>
+			<input type="checkbox" id="toggle-Battle"><label for="toggle-Battle">Battle of Helm's Deep</label><br>
 			<input type="checkbox" id="toggle-Ents"><label for="toggle-Ents">Ents of Fangorn</label>
 		</fieldset>
 		<fieldset style="background-color:#fce5cd">
 			<legend>King Block</legend>
-			<input type="checkbox" id="toggle-King"><label for="toggle-King">Return of the King</label></br>
-			<input type="checkbox" id="toggle-Siege"><label for="toggle-Siege">Siege of Gondor</label></br>
+			<input type="checkbox" id="toggle-King"><label for="toggle-King">Return of the King</label><br>
+			<input type="checkbox" id="toggle-Siege"><label for="toggle-Siege">Siege of Gondor</label><br>
 			<input type="checkbox" id="toggle-Doom"><label for="toggle-Doom">Mount Doom</label>
 		</fieldset>
 		<fieldset style="background-color:#f4cccc">
 			<legend>War Block</legend>
-			<input type="checkbox" id="toggle-Shadows"><label for="toggle-Shadows">Shadows</label></br>		
-			<input type="checkbox" id="toggle-Rider"><label for="toggle-Rider">Black Rider</label></br>
+			<input type="checkbox" id="toggle-Shadows"><label for="toggle-Shadows">Shadows</label><br>		
+			<input type="checkbox" id="toggle-Rider"><label for="toggle-Rider">Black Rider</label><br>
 			<input type="checkbox" id="toggle-Bloodlines"><label for="toggle-Bloodlines">Bloodlines</label>
 		</fieldset>
 		<fieldset style="background-color:#fff2cc">
 			<legend>Hunters Block</legend>
-			<input type="checkbox" id="toggle-Hunters"><label for="toggle-Hunters">The Hunters</label></br>
-			<input type="checkbox" id="toggle-Rise"><label for="toggle-Rise">Rise of Saruman</label></br>
+			<input type="checkbox" id="toggle-Hunters"><label for="toggle-Hunters">The Hunters</label><br>
+			<input type="checkbox" id="toggle-Rise"><label for="toggle-Rise">Rise of Saruman</label><br>
 			<input type="checkbox" id="toggle-Treachery"><label for="toggle-Treachery">Treachery & Deceit</label>
 		</fieldset>
 		<fieldset>
 			<legend>Other Sets</legend>
-			<input type="checkbox" id="toggle-Reflections"><label for="toggle-Reflections">Reflections</label></br>
-			<input type="checkbox" id="toggle-Expanded"><label for="toggle-Expanded">Expanded Middle Earth</label></br>
-			<input type="checkbox" id="toggle-Wraith"><label for="toggle-Wraith">The Wraith Collection</label></br>
+			<input type="checkbox" id="toggle-Reflections"><label for="toggle-Reflections">Reflections</label><br>
+			<input type="checkbox" id="toggle-Expanded"><label for="toggle-Expanded">Expanded Middle Earth</label><br>
+			<input type="checkbox" id="toggle-Wraith"><label for="toggle-Wraith">The Wraith Collection</label><br>
 			<input type="checkbox" id="toggle-End"><label for="toggle-End">Age's End</label>
 		</fieldset>
 		<fieldset>
@@ -93,8 +93,20 @@
 				<option value=".type-ring">Ring</option>
 				<option value=".type-site">Site</option>
 			</select></br>
-			<button type="button" onclick="filter()">Filter</button></br>
+			<button type="button" onclick="filter()">Filter</button><br>
 			<button id="reset">Reset</button>
+		</fieldset>
+		</form>
+
+		<form id="formats">
+		<fieldset>
+			<legend>Formats</legend>
+			<button type="button" onclick="format_towersStandard()">Towers Standard</button>
+			<button type="button" onclick="format_movieBlock()">Movie Block</button>
+			<button type="button" onclick="format_warStandard()">War Standard</button>
+			<button type="button" onclick="format_finalStandard()">Standard (Final)</button>
+			<button type="button" onclick="format_open()">Expanded/Open</button>
+			<button>Clear</button>
 		</fieldset>
 		</form>
 
