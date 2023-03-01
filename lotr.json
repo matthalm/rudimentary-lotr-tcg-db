@@ -1,0 +1,12 @@
+{
+	"cards": [
+		{
+			"title": "Gimli, Son of Gloin",
+			"culture": "dwarf",
+			"type": "companion",
+			"set": "set-1",
+			"img": "https://wiki.lotrtcgpc.net/images/LOTR-EN01S013.0_card.jpg",
+			"info": "1R013",
+		}
+	]
+}
