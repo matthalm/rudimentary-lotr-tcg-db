@@ -1,4 +1,4 @@
-# rudimentary-lotr-tcg-db
+# Rudimentary LotR TCG Database
 A barebones filterable database for Decipher's LOTR TCG
 
 Pulls images from https://wiki.lotrtcgpc.net
