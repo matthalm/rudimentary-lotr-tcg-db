@@ -127,6 +127,66 @@ function format_open() {
     format_other();
 }
 
+function subselect() {
+    switch (document.getElementById("select-type").value) {
+    case ".type-ally":
+        document.getElementById("subselect-ally").style.display = "inline-block";
+        document.getElementById("subselect-companion").style.display = "none";
+        document.getElementById("subselect-event").style.display = "none";
+        document.getElementById("subselect-minion").style.display = "none";
+        document.getElementById("subselect-possession").style.display = "none";
+        document.getElementById("subselect-site").style.display = "none";
+        break;
+/*    case ".type-companion":
+        document.getElementById("subselect-ally").style.display = "none";
+        document.getElementById("subselect-companion").style.display = "inline-block";
+        document.getElementById("subselect-event").style.display = "none";
+        document.getElementById("subselect-minion").style.display = "none";
+        document.getElementById("subselect-possession").style.display = "none";
+        document.getElementById("subselect-site").style.display = "none";
+        break;
+    case ".type-event":
+        document.getElementById("subselect-ally").style.display = "none";
+        document.getElementById("subselect-companion").style.display = "none";
+        document.getElementById("subselect-event").style.display = "inline-block";
+        document.getElementById("subselect-minion").style.display = "none";
+        document.getElementById("subselect-possession").style.display = "none";
+        document.getElementById("subselect-site").style.display = "none";
+        break;
+    case ".type-minion":
+        document.getElementById("subselect-ally").style.display = "none";
+        document.getElementById("subselect-companion").style.display = "none";
+        document.getElementById("subselect-event").style.display = "none";
+        document.getElementById("subselect-minion").style.display = "inline-block";
+        document.getElementById("subselect-possession").style.display = "none";
+        document.getElementById("subselect-site").style.display = "none";
+        break; */
+    case ".type-possession":
+        document.getElementById("subselect-ally").style.display = "none";
+        document.getElementById("subselect-companion").style.display = "none";
+        document.getElementById("subselect-event").style.display = "none";
+        document.getElementById("subselect-minion").style.display = "none";
+        document.getElementById("subselect-possession").style.display = "inline-block";
+        document.getElementById("subselect-site").style.display = "none";
+        break
+    case ".type-site":
+        document.getElementById("subselect-ally").style.display = "none";
+        document.getElementById("subselect-companion").style.display = "none";
+        document.getElementById("subselect-event").style.display = "none";
+        document.getElementById("subselect-minion").style.display = "none";
+        document.getElementById("subselect-possession").style.display = "none";
+        document.getElementById("subselect-site").style.display = "inline-block";
+        break
+    default:
+        document.getElementById("subselect-ally").style.display = "none";
+        document.getElementById("subselect-companion").style.display = "none";
+        document.getElementById("subselect-event").style.display = "none";
+        document.getElementById("subselect-minion").style.display = "none";
+        document.getElementById("subselect-possession").style.display = "none";
+        document.getElementById("subselect-site").style.display = "none";
+    }
+}
+
 function filter() {
 
     resetCards();
@@ -156,29 +216,31 @@ function filter() {
 
     let selectedCulture = document.getElementById("select-culture").value;
     let selectedType = document.getElementById("select-type").value;
+    let selectedSubTypes = document.getElementById("subselect-ally").value + document.getElementById("subselect-possession").value + document.getElementById("subselect-site").value;
+    let selections = selectedCulture + selectedType + selectedSubTypes;
 
     var setList = [];
 
-    if (document.getElementById("toggle-Fellowship").checked == true) {setList.push(".set-1"+selectedCulture+selectedType);}
-    if (document.getElementById("toggle-Mines").checked == true) {setList.push(".set-2"+selectedCulture+selectedType);}
-    if (document.getElementById("toggle-Realms").checked == true) {setList.push(".set-3"+selectedCulture+selectedType);}
-    if (document.getElementById("toggle-Towers").checked == true) {setList.push(".set-4"+selectedCulture+selectedType);}
-    if (document.getElementById("toggle-Battle").checked == true) {setList.push(".set-5"+selectedCulture+selectedType);}
-    if (document.getElementById("toggle-Ents").checked == true) {setList.push(".set-6"+selectedCulture+selectedType);}
-    if (document.getElementById("toggle-King").checked == true) {setList.push(".set-7"+selectedCulture+selectedType);}
-    if (document.getElementById("toggle-Siege").checked == true) {setList.push(".set-8"+selectedCulture+selectedType);}
-    if (document.getElementById("toggle-Reflections").checked == true) {setList.push(".set-9"+selectedCulture+selectedType);}
-    if (document.getElementById("toggle-Doom").checked == true) {setList.push(".set-10"+selectedCulture+selectedType);}
-    if (document.getElementById("toggle-Shadows").checked == true) {setList.push(".set-11"+selectedCulture+selectedType);}
-    if (document.getElementById("toggle-Rider").checked == true) {setList.push(".set-12"+selectedCulture+selectedType);}
-    if (document.getElementById("toggle-Bloodlines").checked == true) {setList.push(".set-13"+selectedCulture+selectedType);}
-    if (document.getElementById("toggle-Expanded").checked == true) {setList.push(".set-14"+selectedCulture+selectedType);}
-    if (document.getElementById("toggle-Hunters").checked == true) {setList.push(".set-15"+selectedCulture+selectedType);}
-    if (document.getElementById("toggle-Wraith").checked == true) {setList.push(".set-16"+selectedCulture+selectedType);}
-    if (document.getElementById("toggle-Rise").checked == true) {setList.push(".set-17"+selectedCulture+selectedType);}
-    if (document.getElementById("toggle-Treachery").checked == true) {setList.push(".set-18"+selectedCulture+selectedType);}
-    if (document.getElementById("toggle-End").checked == true) {setList.push(".set-19"+selectedCulture+selectedType);}
-    if (document.getElementById("toggle-Past").checked == true) {setList.push(".set-v1"+selectedCulture+selectedType);}
+    if (document.getElementById("toggle-Fellowship").checked == true) {setList.push(".set-1"+selections);}
+    if (document.getElementById("toggle-Mines").checked == true) {setList.push(".set-2"+selections);}
+    if (document.getElementById("toggle-Realms").checked == true) {setList.push(".set-3"+selections);}
+    if (document.getElementById("toggle-Towers").checked == true) {setList.push(".set-4"+selections);}
+    if (document.getElementById("toggle-Battle").checked == true) {setList.push(".set-5"+selections);}
+    if (document.getElementById("toggle-Ents").checked == true) {setList.push(".set-6"+selections);}
+    if (document.getElementById("toggle-King").checked == true) {setList.push(".set-7"+selections);}
+    if (document.getElementById("toggle-Siege").checked == true) {setList.push(".set-8"+selections);}
+    if (document.getElementById("toggle-Reflections").checked == true) {setList.push(".set-9"+selections);}
+    if (document.getElementById("toggle-Doom").checked == true) {setList.push(".set-10"+selections);}
+    if (document.getElementById("toggle-Shadows").checked == true) {setList.push(".set-11"+selections);}
+    if (document.getElementById("toggle-Rider").checked == true) {setList.push(".set-12"+selections);}
+    if (document.getElementById("toggle-Bloodlines").checked == true) {setList.push(".set-13"+selections);}
+    if (document.getElementById("toggle-Expanded").checked == true) {setList.push(".set-14"+selections);}
+    if (document.getElementById("toggle-Hunters").checked == true) {setList.push(".set-15"+selections);}
+    if (document.getElementById("toggle-Wraith").checked == true) {setList.push(".set-16"+selections);}
+    if (document.getElementById("toggle-Rise").checked == true) {setList.push(".set-17"+selections);}
+    if (document.getElementById("toggle-Treachery").checked == true) {setList.push(".set-18"+selections);}
+    if (document.getElementById("toggle-End").checked == true) {setList.push(".set-19"+selections);}
+    if (document.getElementById("toggle-Past").checked == true) {setList.push(".set-v1"+selections);}
 
     let checkedSets = setList.join(', ');
     let cards = document.querySelectorAll(checkedSets);
