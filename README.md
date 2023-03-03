@@ -10,5 +10,3 @@ Code for the database was generated with an Excel formula to concatenate the div
 	=concatenate("<div class=",char(34),"card set-4 culture-",lower(F2)," type-",lower(if(isnumber(search(" •",E2))=true,left(E2,find(" •",E2,1)-1),E2)),char(34),"><img loading=",char(34),"lazy",char(34)," src=",char(34),"https://wiki.lotrtcgpc.net/images/LOTR-EN04S",text(C2,"000"),".0_card.jpg",char(34),"></div>")
 
 Basic design approach and card styling css adapted from https://github.com/patrickgalbraith/zombicide-card-database.
-
-The json file in the repository is not used for anything. Maybe someday....
