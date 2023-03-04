@@ -89,8 +89,8 @@
 				<option value=".type-event">Event</option>
 				<option value=".type-follower">Follower</option>
 				<option value=".type-minion">Minion</option>
+				<option value=".type-ring">The One Ring</option>
 				<option value=".type-possession">Possession</option>
-				<option value=".type-ring">Ring</option>
 				<option value=".type-site">Site</option>
 			</select>
 			<select class="subfilter" id="subselect-ally">
@@ -106,27 +106,15 @@
 				<option value=".home-t6">Home 6T</option>
 				<option value=".home-t8">Home 8T</option>
 			</select>
-			<select class="subfilter" id="subselect-companion">
+			<select class="subfilter" id="subselect-artifact">
 				<option value="">All Subtypes</option>
-			</select>
-			<select class="subfilter" id="subselect-event">
-				<option value="">All Subtypes</option>
-			</select>
-			<select class="subfilter" id="subselect-minion">
-				<option value="">All Subtypes</option>
-				<option value=".balrog">Balrog</option>
-				<option value=".creature">Creature</option>
-				<option value=".crow">Crow</option>
-				<option value=".half-troll">Half-Troll</option>
-				<option value=".maia">Maia</option>
-				<option value=".man">Man</option>
-				<option value=".nazgul">Nazgul</option>
-				<option value=".orc">Orc</option>
-				<option value=".spider">Spider</option>
-				<option value=".troll">Troll</option>
-				<option value=".urukhai">Uruk-hai</option>
-				<option value=".wizard">Wizard</option>
-				<option value=".wraith">Wraith</option>
+				<option value=".armor">Armor</option>
+				<option value=".hand-weapon">Hand Weapon</option>
+				<option value=".helm">Helm</option>
+				<option value=".palantir">Palantir</option>
+				<option value=".phial">Phial</option>
+				<option value=".ring">Ring</option>
+				<option value=".staff">Staff</option>
 			</select>
 			<select class="subfilter" id="subselect-possession">
 				<option value="">All Subtypes</option>
@@ -155,24 +143,24 @@
 				<option value=".site-7">Site 7</option>
 				<option value=".site-8">Site 8</option>
 				<option value=".site-9">Site 9</option>
-				<option value=".site-t1">Site T1</option>
-				<option value=".site-t2">Site T2</option>
-				<option value=".site-t3">Site T3</option>
-				<option value=".site-t4">Site T4</option>
-				<option value=".site-t5">Site T5</option>
-				<option value=".site-t6">Site T6</option>
-				<option value=".site-t7">Site T7</option>
-				<option value=".site-t8">Site T8</option>
-				<option value=".site-t9">Site T9</option>
-				<option value=".site-k1">Site K1</option>
-				<option value=".site-k2">Site K2</option>
-				<option value=".site-k3">Site K3</option>
-				<option value=".site-k4">Site K4</option>
-				<option value=".site-k5">Site K5</option>
-				<option value=".site-k6">Site K6</option>
-				<option value=".site-k7">Site K7</option>
-				<option value=".site-k8">Site K8</option>
-				<option value=".site-k9">Site K9</option>
+				<option value=".site-t1">Site 1T</option>
+				<option value=".site-t2">Site 2T</option>
+				<option value=".site-t3">Site 3T</option>
+				<option value=".site-t4">Site 4T</option>
+				<option value=".site-t5">Site 5T</option>
+				<option value=".site-t6">Site 6T</option>
+				<option value=".site-t7">Site 7T</option>
+				<option value=".site-t8">Site 8T</option>
+				<option value=".site-t9">Site 9T</option>
+				<option value=".site-k1">Site 1K</option>
+				<option value=".site-k2">Site 2K</option>
+				<option value=".site-k3">Site 3K</option>
+				<option value=".site-k4">Site 4K</option>
+				<option value=".site-k5">Site 5K</option>
+				<option value=".site-k6">Site 6K</option>
+				<option value=".site-k7">Site 7K</option>
+				<option value=".site-k8">Site 8K</option>
+				<option value=".site-k9">Site 9K</option>
 			</select><br>
 			<button type="button" onclick="filter()">Filter</button>
 			<button id="reset">Reset</button><br>
@@ -574,7 +562,7 @@
 		<div class="card set-2 culture-elf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN02S019.0_card.jpg"></div>
 		<div class="card set-2 culture-elf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN02S020.0_card.jpg"></div>
 		<div class="card set-2 culture-gandalf type-ally home-3"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN02S021.0_card.jpg"></div>
-		<div class="card set-2 culture-gandalf type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN02S022.0_card.jpg"></div>
+		<div class="card set-2 culture-gandalf type-artifact staff"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN02S022.0_card.jpg"></div>
 		<div class="card set-2 culture-gandalf type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN02S023.0_card.jpg"></div>
 		<div class="card set-2 culture-gandalf type-ally home-3"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN02S024.0_card.jpg"></div>
 		<div class="card set-2 culture-gandalf type-ally home-3"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN02S025.0_card.jpg"></div>
@@ -602,7 +590,7 @@
 		<div class="card set-2 culture-isengard type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN02S047.0_card.jpg"></div>
 		<div class="card set-2 culture-isengard type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN02S048.0_card.jpg"></div>
 		<div class="card set-2 culture-moria type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN02S049.0_card.jpg"></div>
-		<div class="card set-2 culture-moria type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN02S050.0_card.jpg"></div>
+		<div class="card set-2 culture-moria type-artifact hand-weapon"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN02S050.0_card.jpg"></div>
 		<div class="card set-2 culture-moria type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN02S051.0_card.jpg"></div>
 		<div class="card set-2 culture-moria type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN02S052.0_card.jpg"></div>
 		<div class="card set-2 culture-moria type-possession"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN02S053.0_card.jpg"></div>
@@ -626,7 +614,7 @@
 		<div class="card set-2 culture-moria type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN02S071.0_card.jpg"></div>
 		<div class="card set-2 culture-moria type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN02S072.0_card.jpg"></div>
 		<div class="card set-2 culture-moria type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN02S073.0_card.jpg"></div>
-		<div class="card set-2 culture-moria type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN02S074.0_card.jpg"></div>
+		<div class="card set-2 culture-moria type-artifact hand-weapon"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN02S074.0_card.jpg"></div>
 		<div class="card set-2 culture-ringwraith type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN02S075.0_card.jpg"></div>
 		<div class="card set-2 culture-ringwraith type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN02S076.0_card.jpg"></div>
 		<div class="card set-2 culture-ringwraith type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN02S077.0_card.jpg"></div>
@@ -657,7 +645,7 @@
 		<div class="card set-2 culture-shire type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN02S102.0_card.jpg"></div>
 		<div class="card set-2 culture-shire type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN02S103.0_card.jpg"></div>
 		<div class="card set-2 culture-shire type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN02S104.0_card.jpg"></div>
-		<div class="card set-2 culture-shire type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN02S105.0_card.jpg"></div>
+		<div class="card set-2 culture-shire type-artifact armor"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN02S105.0_card.jpg"></div>
 		<div class="card set-2 culture-shire type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN02S106.0_card.jpg"></div>
 		<div class="card set-2 culture-shire type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN02S107.0_card.jpg"></div>
 		<div class="card set-2 culture-shire type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN02S108.0_card.jpg"></div>
@@ -699,18 +687,18 @@
 		<div class="card set-3 culture-elf type-ally home-3"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN03S020.0_card.jpg"></div>
 		<div class="card set-3 culture-elf type-possession hand-weapon"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN03S021.0_card.jpg"></div>
 		<div class="card set-3 culture-elf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN03S022.0_card.jpg"></div>
-		<div class="card set-3 culture-elf type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN03S023.0_card.jpg"></div>
+		<div class="card set-3 culture-elf type-artifact ring"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN03S023.0_card.jpg"></div>
 		<div class="card set-3 culture-elf type-possession"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN03S024.0_card.jpg"></div>
 		<div class="card set-3 culture-elf type-ally home-3"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN03S025.0_card.jpg"></div>
 		<div class="card set-3 culture-elf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN03S026.0_card.jpg"></div>
-		<div class="card set-3 culture-elf type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN03S027.0_card.jpg"></div>
+		<div class="card set-3 culture-elf type-artifact ring"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN03S027.0_card.jpg"></div>
 		<div class="card set-3 culture-elf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN03S028.0_card.jpg"></div>
 		<div class="card set-3 culture-gandalf type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN03S029.0_card.jpg"></div>
 		<div class="card set-3 culture-gandalf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN03S030.0_card.jpg"></div>
 		<div class="card set-3 culture-gandalf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN03S031.0_card.jpg"></div>
 		<div class="card set-3 culture-gandalf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN03S032.0_card.jpg"></div>
 		<div class="card set-3 culture-gandalf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN03S033.0_card.jpg"></div>
-		<div class="card set-3 culture-gandalf type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN03S034.0_card.jpg"></div>
+		<div class="card set-3 culture-gandalf type-artifact ring"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN03S034.0_card.jpg"></div>
 		<div class="card set-3 culture-gandalf type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN03S035.0_card.jpg"></div>
 		<div class="card set-3 culture-gandalf type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN03S036.0_card.jpg"></div>
 		<div class="card set-3 culture-gondor type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN03S037.0_card.jpg"></div>
@@ -743,7 +731,7 @@
 		<div class="card set-3 culture-isengard type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN03S064.0_card.jpg"></div>
 		<div class="card set-3 culture-isengard type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN03S065.0_card.jpg"></div>
 		<div class="card set-3 culture-isengard type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN03S066.0_card.jpg"></div>
-		<div class="card set-3 culture-isengard type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN03S067.0_card.jpg"></div>
+		<div class="card set-3 culture-isengard type-artifact palantir"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN03S067.0_card.jpg"></div>
 		<div class="card set-3 culture-isengard type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN03S068.0_card.jpg"></div>
 		<div class="card set-3 culture-isengard type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN03S069.0_card.jpg"></div>
 		<div class="card set-3 culture-isengard type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN03S070.0_card.jpg"></div>
@@ -839,7 +827,7 @@
 		<div class="card set-v1 culture-moria type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-ENV1S036.0_card.jpg"></div>
 		<div class="card set-v1 culture-ringwraith type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-ENV1S037.0_card.jpg"></div>
 		<div class="card set-v1 culture-ringwraith type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-ENV1S038.0_card.jpg"></div>
-		<div class="card set-v1 culture-ringwraith type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-ENV1S039.0_card.jpg"></div>
+		<div class="card set-v1 culture-ringwraith type-artifact helm"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-ENV1S039.0_card.jpg"></div>
 		<div class="card set-v1 culture-ringwraith type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-ENV1S040.0_card.jpg"></div>
 		<div class="card set-v1 culture-ringwraith type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-ENV1S041.0_card.jpg"></div>
 		<div class="card set-v1 culture-ringwraith type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-ENV1S042.0_card.jpg"></div>
@@ -957,7 +945,7 @@
 		<div class="card set-4 culture-gandalf type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN04S088.0_card.jpg"></div>
 		<div class="card set-4 culture-gandalf type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN04S089.0_card.jpg"></div>
 		<div class="card set-4 culture-gandalf type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN04S090.0_card.jpg"></div>
-		<div class="card set-4 culture-gandalf type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN04S091.0_card.jpg"></div>
+		<div class="card set-4 culture-gandalf type-artifact staff"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN04S091.0_card.jpg"></div>
 		<div class="card set-4 culture-gandalf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN04S092.0_card.jpg"></div>
 		<div class="card set-4 culture-gandalf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN04S093.0_card.jpg"></div>
 		<div class="card set-4 culture-gandalf type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN04S094.0_card.jpg"></div>
@@ -1032,7 +1020,7 @@
 		<div class="card set-4 culture-isengard type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN04S163.0_card.jpg"></div>
 		<div class="card set-4 culture-isengard type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN04S164.0_card.jpg"></div>
 		<div class="card set-4 culture-isengard type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN04S165.0_card.jpg"></div>
-		<div class="card set-4 culture-isengard type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN04S166.0_card.jpg"></div>
+		<div class="card set-4 culture-isengard type-artifact palantir"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN04S166.0_card.jpg"></div>
 		<div class="card set-4 culture-isengard type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN04S167.0_card.jpg"></div>
 		<div class="card set-4 culture-isengard type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN04S168.0_card.jpg"></div>
 		<div class="card set-4 culture-isengard type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN04S169.0_card.jpg"></div>
@@ -1040,7 +1028,7 @@
 		<div class="card set-4 culture-isengard type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN04S171.0_card.jpg"></div>
 		<div class="card set-4 culture-isengard type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN04S172.0_card.jpg"></div>
 		<div class="card set-4 culture-isengard type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN04S173.0_card.jpg"></div>
-		<div class="card set-4 culture-isengard type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN04S174.0_card.jpg"></div>
+		<div class="card set-4 culture-isengard type-artifact staff"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN04S174.0_card.jpg"></div>
 		<div class="card set-4 culture-isengard type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN04S175.0_card.jpg"></div>
 		<div class="card set-4 culture-isengard type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN04S176.0_card.jpg"></div>
 		<div class="card set-4 culture-isengard type-possession hand-weapon"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN04S177.0_card.jpg"></div>
@@ -1418,7 +1406,7 @@
 		<div class="card set-6 culture-gondor type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN06S052.0_card.jpg"></div>
 		<div class="card set-6 culture-gondor type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN06S053.0_card.jpg"></div>
 		<div class="card set-6 culture-gondor type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN06S054.0_card.jpg"></div>
-		<div class="card set-6 culture-gondor type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN06S055.0_card.jpg"></div>
+		<div class="card set-6 culture-gondor type-artifact ring"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN06S055.0_card.jpg"></div>
 		<div class="card set-6 culture-gondor type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN06S056.0_card.jpg"></div>
 		<div class="card set-6 culture-isengard type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN06S057.0_card.jpg"></div>
 		<div class="card set-6 culture-isengard type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN06S058.0_card.jpg"></div>
@@ -1531,7 +1519,7 @@
 		<div class="card set-7 culture-gandalf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN07S035.0_card.jpg"></div>
 		<div class="card set-7 culture-gandalf type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN07S036.0_card.jpg"></div>
 		<div class="card set-7 culture-gandalf type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN07S037.0_card.jpg"></div>
-		<div class="card set-7 culture-gandalf type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN07S038.0_card.jpg"></div>
+		<div class="card set-7 culture-gandalf type-artifact staff"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN07S038.0_card.jpg"></div>
 		<div class="card set-7 culture-gandalf type-possession hand-weapon"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN07S039.0_card.jpg"></div>
 		<div class="card set-7 culture-gandalf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN07S040.0_card.jpg"></div>
 		<div class="card set-7 culture-gandalf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN07S041.0_card.jpg"></div>
@@ -1572,8 +1560,8 @@
 		<div class="card set-7 culture-smeagol type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN07S076.0_card.jpg"></div>
 		<div class="card set-7 culture-smeagol type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN07S077.0_card.jpg"></div>
 		<div class="card set-7 culture-smeagol type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN07S078.0_card.jpg"></div>
-		<div class="card set-7 culture-gondor type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN07S079.0_card.jpg"></div>
-		<div class="card set-7 culture-gondor type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN07S080.0_card.jpg"></div>
+		<div class="card set-7 culture-gondor type-artifact hand-weapon"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN07S079.0_card.jpg"></div>
+		<div class="card set-7 culture-gondor type-artifact hand-weapon"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN07S080.0_card.jpg"></div>
 		<div class="card set-7 culture-gondor type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN07S081.0_card.jpg"></div>
 		<div class="card set-7 culture-gondor type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN07S082.0_card.jpg"></div>
 		<div class="card set-7 culture-gondor type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN07S083.0_card.jpg"></div>
@@ -1990,24 +1978,24 @@
 		<div class="card set-9 culture-dwarf type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S003.0_card.jpg"></div>
 		<div class="card set-9 culture-dwarf type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S004.0_card.jpg"></div>
 		<div class="card set-9 culture-dwarf type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S005.0_card.jpg"></div>
-		<div class="card set-9 culture-dwarf type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S006.0_card.jpg"></div>
-		<div class="card set-9 culture-dwarf type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S007.0_card.jpg"></div>
-		<div class="card set-9 culture-dwarf type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S008.0_card.jpg"></div>
-		<div class="card set-9 culture-dwarf type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S009.0_card.jpg"></div>
+		<div class="card set-9 culture-dwarf type-artifact ring"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S006.0_card.jpg"></div>
+		<div class="card set-9 culture-dwarf type-artifact ring"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S007.0_card.jpg"></div>
+		<div class="card set-9 culture-dwarf type-artifact ring"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S008.0_card.jpg"></div>
+		<div class="card set-9 culture-dwarf type-artifact ring"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S009.0_card.jpg"></div>
 		<div class="card set-9 culture-dwarf type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S010.0_card.jpg"></div>
 		<div class="card set-9 culture-dwarf type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S011.0_card.jpg"></div>
-		<div class="card set-9 culture-elf type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S012.0_card.jpg"></div>
+		<div class="card set-9 culture-elf type-artifact hand-weapon"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S012.0_card.jpg"></div>
 		<div class="card set-9 culture-elf type-possession"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S013.0_card.jpg"></div>
 		<div class="card set-9 culture-elf type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S014.0_card.jpg"></div>
 		<div class="card set-9 culture-elf type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S015.0_card.jpg"></div>
 		<div class="card set-9 culture-elf type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S016.0_card.jpg"></div>
 		<div class="card set-9 culture-elf type-possession hand-weapon"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S017.0_card.jpg"></div>
 		<div class="card set-9 culture-elf type-possession hand-weapon"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S018.0_card.jpg"></div>
-		<div class="card set-9 culture-elf type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S019.0_card.jpg"></div>
-		<div class="card set-9 culture-elf type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S020.0_card.jpg"></div>
+		<div class="card set-9 culture-elf type-artifact ring"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S019.0_card.jpg"></div>
+		<div class="card set-9 culture-elf type-artifact ring"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S020.0_card.jpg"></div>
 		<div class="card set-9 culture-elf type-possession hand-weapon"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S021.0_card.jpg"></div>
 		<div class="card set-9 culture-elf type-possession"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S022.0_card.jpg"></div>
-		<div class="card set-9 culture-elf type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S023.0_card.jpg"></div>
+		<div class="card set-9 culture-elf type-artifact ring"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S023.0_card.jpg"></div>
 		<div class="card set-9 culture-gandalf type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S024.0_card.jpg"></div>
 		<div class="card set-9 culture-gandalf type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S025.0_card.jpg"></div>
 		<div class="card set-9 culture-gandalf type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S026.0_card.jpg"></div>
@@ -2018,7 +2006,7 @@
 		<div class="card set-9 culture-gondor type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S031.0_card.jpg"></div>
 		<div class="card set-9 culture-gondor type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S032.0_card.jpg"></div>
 		<div class="card set-9 culture-gondor type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S033.0_card.jpg"></div>
-		<div class="card set-9 culture-gondor type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S034.0_card.jpg"></div>
+		<div class="card set-9 culture-gondor type-artifact hand-weapon"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S034.0_card.jpg"></div>
 		<div class="card set-9 culture-gondor type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S035.0_card.jpg"></div>
 		<div class="card set-9 culture-gondor type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S036.0_card.jpg"></div>
 		<div class="card set-9 culture-gondor type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S037.0_card.jpg"></div>
@@ -2026,9 +2014,9 @@
 		<div class="card set-9 culture-isengard type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S039.0_card.jpg"></div>
 		<div class="card set-9 culture-isengard type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S040.0_card.jpg"></div>
 		<div class="card set-9 culture-moria type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S041.0_card.jpg"></div>
-		<div class="card set-9 culture-ringwraith type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S042.0_card.jpg"></div>
-		<div class="card set-9 culture-ringwraith type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S043.0_card.jpg"></div>
-		<div class="card set-9 culture-ringwraith type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S044.0_card.jpg"></div>
+		<div class="card set-9 culture-ringwraith type-artifact ring"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S042.0_card.jpg"></div>
+		<div class="card set-9 culture-ringwraith type-artifact ring"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S043.0_card.jpg"></div>
+		<div class="card set-9 culture-ringwraith type-artifact ring"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S044.0_card.jpg"></div>
 		<div class="card set-9 culture-rohan type-possession"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S045.0_card.jpg"></div>
 		<div class="card set-9 culture-rohan type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S046.0_card.jpg"></div>
 		<div class="card set-9 culture-sauron type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN09S047.0_card.jpg"></div>
@@ -2196,7 +2184,7 @@
 		<div class="card set-11 culture-gandalf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN11S031.0_card.jpg"></div>
 		<div class="card set-11 culture-gandalf type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN11S032.0_card.jpg"></div>
 		<div class="card set-11 culture-gandalf type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN11S033.0_card.jpg"></div>
-		<div class="card set-11 culture-gandalf type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN11S034.0_card.jpg"></div>
+		<div class="card set-11 culture-gandalf type-artifact staff"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN11S034.0_card.jpg"></div>
 		<div class="card set-11 culture-gandalf type-possession hand-weapon"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN11S035.0_card.jpg"></div>
 		<div class="card set-11 culture-gandalf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN11S036.0_card.jpg"></div>
 		<div class="card set-11 culture-gandalf type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN11S037.0_card.jpg"></div>
@@ -2510,7 +2498,7 @@
 		<div class="card set-12 culture-men type-possession hand-weapon"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN12S077.0_card.jpg"></div>
 		<div class="card set-12 culture-men type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN12S078.0_card.jpg"></div>
 		<div class="card set-12 culture-moria type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN12S079.0_card.jpg"></div>
-		<div class="card set-12 culture-moria type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN12S080.0_card.jpg"></div>
+		<div class="card set-12 culture-moria type-artifact hand-weapon"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN12S080.0_card.jpg"></div>
 		<div class="card set-12 culture-orc type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN12S081.0_card.jpg"></div>
 		<div class="card set-12 culture-orc type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN12S082.0_card.jpg"></div>
 		<div class="card set-12 culture-orc type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN12S083.0_card.jpg"></div>
@@ -2662,7 +2650,7 @@
 		<div class="card set-13 culture-gandalf type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN13S033.0_card.jpg"></div>
 		<div class="card set-13 culture-gandalf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN13S034.0_card.jpg"></div>
 		<div class="card set-13 culture-gandalf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN13S035.0_card.jpg"></div>
-		<div class="card set-13 culture-gandalf type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN13S036.0_card.jpg"></div>
+		<div class="card set-13 culture-gandalf type-artifact palantir"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN13S036.0_card.jpg"></div>
 		<div class="card set-13 culture-gandalf type-follower"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN13S037.0_card.jpg"></div>
 		<div class="card set-13 culture-gandalf type-follower"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN13S038.0_card.jpg"></div>
 		<div class="card set-13 culture-gandalf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN13S039.0_card.jpg"></div>
@@ -2707,7 +2695,7 @@
 		<div class="card set-13 culture-isengard type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN13S078.0_card.jpg"></div>
 		<div class="card set-13 culture-isengard type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN13S079.0_card.jpg"></div>
 		<div class="card set-13 culture-isengard type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN13S080.0_card.jpg"></div>
-		<div class="card set-13 culture-isengard type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN13S081.0_card.jpg"></div>
+		<div class="card set-13 culture-isengard type-artifact staff"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN13S081.0_card.jpg"></div>
 		<div class="card set-13 culture-men type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN13S082.0_card.jpg"></div>
 		<div class="card set-13 culture-men type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN13S083.0_card.jpg"></div>
 		<div class="card set-13 culture-men type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN13S084.0_card.jpg"></div>
@@ -2767,7 +2755,7 @@
 		<div class="card set-13 culture-rohan type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN13S138.0_card.jpg"></div>
 		<div class="card set-13 culture-rohan type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN13S139.0_card.jpg"></div>
 		<div class="card set-13 culture-sauron type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN13S140.0_card.jpg"></div>
-		<div class="card set-13 culture-sauron type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN13S141.0_card.jpg"></div>
+		<div class="card set-13 culture-sauron type-artifact hand-weapon"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN13S141.0_card.jpg"></div>
 		<div class="card set-13 culture-shire type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN13S142.0_card.jpg"></div>
 		<div class="card set-13 culture-shire type-possession mount"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN13S143.0_card.jpg"></div>
 		<div class="card set-13 culture-shire type-follower"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN13S144.0_card.jpg"></div>
@@ -2779,9 +2767,9 @@
 		<div class="card set-13 culture-shire type-follower"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN13S150.0_card.jpg"></div>
 		<div class="card set-13 culture-shire type-follower"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN13S151.0_card.jpg"></div>
 		<div class="card set-13 culture-shire type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN13S152.0_card.jpg"></div>
-		<div class="card set-13 culture-shire type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN13S153.0_card.jpg"></div>
+		<div class="card set-13 culture-shire type-artifact armor"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN13S153.0_card.jpg"></div>
 		<div class="card set-13 culture-shire type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN13S154.0_card.jpg"></div>
-		<div class="card set-13 culture-shire type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN13S155.0_card.jpg"></div>
+		<div class="card set-13 culture-shire type-artifact phial"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN13S155.0_card.jpg"></div>
 		<div class="card set-13 culture-shire type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN13S156.0_card.jpg"></div>
 		<div class="card set-13 culture-shire type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN13S157.0_card.jpg"></div>
 		<div class="card set-13 culture-urukhai type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN13S158.0_card.jpg"></div>
@@ -3049,7 +3037,7 @@
 		<div class="card set-17 culture-dwarf type-possession armor"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN17S001.0_card.jpg"></div>
 		<div class="card set-17 culture-dwarf type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN17S002.0_card.jpg"></div>
 		<div class="card set-17 culture-dwarf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN17S003.0_card.jpg"></div>
-		<div class="card set-17 culture-dwarf type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN17S004.0_card.jpg"></div>
+		<div class="card set-17 culture-dwarf type-artifact ring"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN17S004.0_card.jpg"></div>
 		<div class="card set-17 culture-dwarf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN17S005.0_card.jpg"></div>
 		<div class="card set-17 culture-dwarf type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN17S006.0_card.jpg"></div>
 		<div class="card set-17 culture-elf type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN17S007.0_card.jpg"></div>
@@ -3072,11 +3060,11 @@
 		<div class="card set-17 culture-gandalf type-possession mount"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN17S024.0_card.jpg"></div>
 		<div class="card set-17 culture-gandalf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN17S025.0_card.jpg"></div>
 		<div class="card set-17 culture-gandalf type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN17S026.0_card.jpg"></div>
-		<div class="card set-17 culture-gondor type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN17S027.0_card.jpg"></div>
+		<div class="card set-17 culture-gondor type-artifact hand-weapon"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN17S027.0_card.jpg"></div>
 		<div class="card set-17 culture-gondor type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN17S028.0_card.jpg"></div>
 		<div class="card set-17 culture-gondor type-possession ranged-weapon"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN17S029.0_card.jpg"></div>
 		<div class="card set-17 culture-gondor type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN17S030.0_card.jpg"></div>
-		<div class="card set-17 culture-gondor type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN17S031.0_card.jpg"></div>
+		<div class="card set-17 culture-gondor type-artifact hand-weapon"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN17S031.0_card.jpg"></div>
 		<div class="card set-17 culture-gondor type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN17S032.0_card.jpg"></div>
 		<div class="card set-17 culture-gondor type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN17S033.0_card.jpg"></div>
 		<div class="card set-17 culture-gondor type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN17S034.0_card.jpg"></div>
@@ -3187,8 +3175,8 @@
 		<div class="card set-17 culture-wraith type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN17S139.0_card.jpg"></div>
 		<div class="card set-17 culture-wraith type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN17S140.0_card.jpg"></div>
 		<div class="card set-17 culture-wraith type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN17S141.0_card.jpg"></div>
-		<div class="card set-17 culture-wraith type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN17S142.0_card.jpg"></div>
-		<div class="card set-17 culture-wraith type-artifact"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN17S143.0_card.jpg"></div>
+		<div class="card set-17 culture-wraith type-artifact ring"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN17S142.0_card.jpg"></div>
+		<div class="card set-17 culture-wraith type-artifact ring"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN17S143.0_card.jpg"></div>
 		<div class="card set-17 culture-wraith type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN17S144.0_card.jpg"></div>
 		<div class="lcard set-17 culture-na type-site"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN17S145.0_card.jpg"></div>
 		<div class="lcard set-17 culture-na type-site"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN17S146.0_card.jpg"></div>

@@ -127,63 +127,37 @@ function format_open() {
     format_other();
 }
 
+function hideSubfilters() {
+    document.getElementById("subselect-ally").style.display = "none";
+    document.getElementById("subselect-artifact").style.display = "none";
+    document.getElementById("subselect-possession").style.display = "none";
+    document.getElementById("subselect-site").style.display = "none";
+}
+
 function subselect() {
+    document.getElementById("subselect-ally").selectedIndex = 0;
+    document.getElementById("subselect-artifact").selectedIndex = 0;
+    document.getElementById("subselect-possession").selectedIndex = 0;
+    document.getElementById("subselect-site").selectedIndex = 0;
     switch (document.getElementById("select-type").value) {
     case ".type-ally":
+        hideSubfilters();
         document.getElementById("subselect-ally").style.display = "inline-block";
-        document.getElementById("subselect-companion").style.display = "none";
-        document.getElementById("subselect-event").style.display = "none";
-        document.getElementById("subselect-minion").style.display = "none";
-        document.getElementById("subselect-possession").style.display = "none";
-        document.getElementById("subselect-site").style.display = "none";
         break;
-/*    case ".type-companion":
-        document.getElementById("subselect-ally").style.display = "none";
-        document.getElementById("subselect-companion").style.display = "inline-block";
-        document.getElementById("subselect-event").style.display = "none";
-        document.getElementById("subselect-minion").style.display = "none";
-        document.getElementById("subselect-possession").style.display = "none";
-        document.getElementById("subselect-site").style.display = "none";
+    case ".type-artifact":
+        hideSubfilters();
+        document.getElementById("subselect-artifact").style.display = "inline-block";
         break;
-    case ".type-event":
-        document.getElementById("subselect-ally").style.display = "none";
-        document.getElementById("subselect-companion").style.display = "none";
-        document.getElementById("subselect-event").style.display = "inline-block";
-        document.getElementById("subselect-minion").style.display = "none";
-        document.getElementById("subselect-possession").style.display = "none";
-        document.getElementById("subselect-site").style.display = "none";
-        break;
-    case ".type-minion":
-        document.getElementById("subselect-ally").style.display = "none";
-        document.getElementById("subselect-companion").style.display = "none";
-        document.getElementById("subselect-event").style.display = "none";
-        document.getElementById("subselect-minion").style.display = "inline-block";
-        document.getElementById("subselect-possession").style.display = "none";
-        document.getElementById("subselect-site").style.display = "none";
-        break; */
     case ".type-possession":
-        document.getElementById("subselect-ally").style.display = "none";
-        document.getElementById("subselect-companion").style.display = "none";
-        document.getElementById("subselect-event").style.display = "none";
-        document.getElementById("subselect-minion").style.display = "none";
+        hideSubfilters();
         document.getElementById("subselect-possession").style.display = "inline-block";
-        document.getElementById("subselect-site").style.display = "none";
         break
     case ".type-site":
-        document.getElementById("subselect-ally").style.display = "none";
-        document.getElementById("subselect-companion").style.display = "none";
-        document.getElementById("subselect-event").style.display = "none";
-        document.getElementById("subselect-minion").style.display = "none";
-        document.getElementById("subselect-possession").style.display = "none";
+        hideSubfilters();
         document.getElementById("subselect-site").style.display = "inline-block";
         break
     default:
-        document.getElementById("subselect-ally").style.display = "none";
-        document.getElementById("subselect-companion").style.display = "none";
-        document.getElementById("subselect-event").style.display = "none";
-        document.getElementById("subselect-minion").style.display = "none";
-        document.getElementById("subselect-possession").style.display = "none";
-        document.getElementById("subselect-site").style.display = "none";
+        hideSubfilters();
     }
 }
 
@@ -216,7 +190,7 @@ function filter() {
 
     let selectedCulture = document.getElementById("select-culture").value;
     let selectedType = document.getElementById("select-type").value;
-    let selectedSubTypes = document.getElementById("subselect-ally").value + document.getElementById("subselect-possession").value + document.getElementById("subselect-site").value;
+    let selectedSubTypes = document.getElementById("subselect-ally").value + document.getElementById("subselect-artifact").value + document.getElementById("subselect-possession").value + document.getElementById("subselect-site").value;
     let selections = selectedCulture + selectedType + selectedSubTypes;
 
     var setList = [];
