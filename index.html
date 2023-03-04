@@ -61,24 +61,30 @@
 		<fieldset>
 			<select id="select-culture">
 				<option value="">All Cultures</option>
-				<option value=".culture-dwarf">Dwarven</option>
-				<option value=".culture-elf">Elven</option>
-				<option value=".culture-gandalf">Gandalf</option>
-				<option value=".culture-smeagol">Gollum (Free Peoples)</option>
-				<option value=".culture-gondor">Gondor</option>
-				<option value=".culture-rohan">Rohan</option>
-				<option value=".culture-shire">Shire</option>
-				<option value=".culture-dunland">Dunland</option>
-				<option value=".culture-gollum">Gollum (Shadow)</option>
-				<option value=".culture-isengard">Isengard</option>
-				<option value=".culture-moria">Moria</option>
-				<option value=".culture-raider">Raider</option>
-				<option value=".culture-ringwraith">Ringwraith</option>
-				<option value=".culture-sauron">Sauron</option>
-				<option value=".culture-men">Men</option>
-				<option value=".culture-orc">Orc</option>
-				<option value=".culture-urukhai">Uruk-hai</option>
-				<option value=".culture-wraith">Wraith</option>
+				<optgroup label="Free Peoples">
+					<option value=".culture-dwarf">Dwarven</option>
+					<option value=".culture-elf">Elven</option>
+					<option value=".culture-gandalf">Gandalf</option>
+					<option value=".culture-smeagol">Gollum</option>
+					<option value=".culture-gondor">Gondor</option>
+					<option value=".culture-rohan">Rohan</option>
+					<option value=".culture-shire">Shire</option>
+				</optgroup>
+				<optgroup label="Shadow (Pre-Shadows)">
+					<option value=".culture-dunland">Dunland</option>
+					<option value=".culture-gollum">Gollum</option>
+					<option value=".culture-isengard">Isengard</option>
+					<option value=".culture-moria">Moria</option>
+					<option value=".culture-raider">Raider</option>
+					<option value=".culture-ringwraith">Ringwraith</option>
+					<option value=".culture-sauron">Sauron</option>
+				</optgroup>
+				<optgroup label="Shadow (Post-Shadows)">
+					<option value=".culture-men">Men</option>
+					<option value=".culture-orc">Orc</option>
+					<option value=".culture-urukhai">Uruk-hai</option>
+					<option value=".culture-wraith">Wraith</option>
+				</optgroup>
 			</select><br>
 			<select id="select-type" onchange="subselect();">
 				<option value="">All Cardtypes</option>
@@ -1344,7 +1350,7 @@
 		<div class="lcard set-5 culture-na type-site site-t9"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN05S120.0_card.jpg"></div>
 		<div class="card set-5 culture-elf type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN05S121.0_card.jpg"></div>
 		<div class="card set-5 culture-rohan type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN05S122.0_card.jpg"></div>
-	<!--	<div class="card set-5 culture-dwarf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN05S123.0_card.jpg"></div>
+		<!--<div class="card set-5 culture-dwarf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN05S123.0_card.jpg"></div>
 		<div class="card set-5 culture-elf type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN05S124.0_card.jpg"></div>
 		<div class="card set-5 culture-isengard type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN05S125.0_card.jpg"></div>
 		<div class="card set-5 culture-raider type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN05S126.0_card.jpg"></div>
@@ -2079,25 +2085,25 @@
 		<div class="card set-10 culture-raider type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN10S050.0_card.jpg"></div>
 		<div class="card set-10 culture-raider type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN10S051.0_card.jpg"></div>
 		<div class="card set-10 culture-raider type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN10S052.0_card.jpg"></div>
-		<div class="card set-10 culture-wraith type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN10S053.0_card.jpg"></div>
-		<div class="card set-10 culture-wraith type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN10S054.0_card.jpg"></div>
-		<div class="card set-10 culture-wraith type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN10S055.0_card.jpg"></div>
-		<div class="card set-10 culture-wraith type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN10S056.0_card.jpg"></div>
-		<div class="card set-10 culture-wraith type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN10S057.0_card.jpg"></div>
-		<div class="card set-10 culture-wraith type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN10S058.0_card.jpg"></div>
-		<div class="card set-10 culture-wraith type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN10S059.0_card.jpg"></div>
-		<div class="card set-10 culture-wraith type-possession hand-weapon"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN10S060.0_card.jpg"></div>
-		<div class="card set-10 culture-wraith type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN10S061.0_card.jpg"></div>
-		<div class="card set-10 culture-wraith type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN10S062.0_card.jpg"></div>
-		<div class="card set-10 culture-wraith type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN10S063.0_card.jpg"></div>
-		<div class="card set-10 culture-wraith type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN10S064.0_card.jpg"></div>
-		<div class="card set-10 culture-wraith type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN10S065.0_card.jpg"></div>
-		<div class="card set-10 culture-wraith type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN10S066.0_card.jpg"></div>
-		<div class="card set-10 culture-wraith type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN10S067.0_card.jpg"></div>
-		<div class="card set-10 culture-wraith type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN10S068.0_card.jpg"></div>
-		<div class="card set-10 culture-wraith type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN10S069.0_card.jpg"></div>
-		<div class="card set-10 culture-wraith type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN10S070.0_card.jpg"></div>
-		<div class="card set-10 culture-wraith type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN10S071.0_card.jpg"></div>
+		<div class="card set-10 culture-ringwraith type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN10S053.0_card.jpg"></div>
+		<div class="card set-10 culture-ringwraith type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN10S054.0_card.jpg"></div>
+		<div class="card set-10 culture-ringwraith type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN10S055.0_card.jpg"></div>
+		<div class="card set-10 culture-ringwraith type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN10S056.0_card.jpg"></div>
+		<div class="card set-10 culture-ringwraith type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN10S057.0_card.jpg"></div>
+		<div class="card set-10 culture-ringwraith type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN10S058.0_card.jpg"></div>
+		<div class="card set-10 culture-ringwraith type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN10S059.0_card.jpg"></div>
+		<div class="card set-10 culture-ringwraith type-possession hand-weapon"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN10S060.0_card.jpg"></div>
+		<div class="card set-10 culture-ringwraith type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN10S061.0_card.jpg"></div>
+		<div class="card set-10 culture-ringwraith type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN10S062.0_card.jpg"></div>
+		<div class="card set-10 culture-ringwraith type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN10S063.0_card.jpg"></div>
+		<div class="card set-10 culture-ringwraith type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN10S064.0_card.jpg"></div>
+		<div class="card set-10 culture-ringwraith type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN10S065.0_card.jpg"></div>
+		<div class="card set-10 culture-ringwraith type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN10S066.0_card.jpg"></div>
+		<div class="card set-10 culture-ringwraith type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN10S067.0_card.jpg"></div>
+		<div class="card set-10 culture-ringwraith type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN10S068.0_card.jpg"></div>
+		<div class="card set-10 culture-ringwraith type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN10S069.0_card.jpg"></div>
+		<div class="card set-10 culture-ringwraith type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN10S070.0_card.jpg"></div>
+		<div class="card set-10 culture-ringwraith type-minion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN10S071.0_card.jpg"></div>
 		<div class="card set-10 culture-rohan type-companion"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN10S072.0_card.jpg"></div>
 		<div class="card set-10 culture-rohan type-condition"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN10S073.0_card.jpg"></div>
 		<div class="card set-10 culture-rohan type-event"><img loading="lazy" src="https://wiki.lotrtcgpc.net/images/LOTR-EN10S074.0_card.jpg"></div>
