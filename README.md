@@ -3,6 +3,8 @@ A barebones filterable visual database for Decipher's LOTR TCG
 
 "Searching" functions by toggling a number of sets (click a block heading to toggle all sets in the block) and/or filtering by culture and cardtype. Pressing "filter" displays the results. If a culture and/or cardtype filter is selected without any sets toggled, the filter button will toggle all sets and display the results. Use the "reset" button or click the header title to clear results and toggles.
 
+Cards with errata default to updated wording. This includes 2021 errata issued by the Player's Council. Mouseover these cards to show the original printing.
+
 The card database is contained within the html of the page. Images are pulled from https://wiki.lotrtcgpc.net. 
 
 Code for the database was generated with an Excel formula to concatenate the div and image containers with the appropriate attributes from a table generated from https://lotrtcgwiki.com/. An example is provided below for reference, where column C contains the card's number, column E contains the card's type (the formula removes subtypes), and column F contains the card's culture.

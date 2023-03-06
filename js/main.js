@@ -80,15 +80,18 @@ function format_hunters() {
 
 function format_other() {
     if ( document.getElementById('toggle-Reflections').checked == true 
+        && document.getElementById('toggle-Weta').checked == true 
         && document.getElementById('toggle-Expanded').checked == true 
         && document.getElementById('toggle-Wraith').checked == true 
         && document.getElementById('toggle-End').checked == true ) {
         document.getElementById('toggle-Reflections').checked = false;
+        document.getElementById('toggle-Weta').checked = false;
         document.getElementById('toggle-Expanded').checked = false;
         document.getElementById('toggle-Wraith').checked = false;
         document.getElementById('toggle-End').checked = false;
     } else {
         document.getElementById('toggle-Reflections').checked = true;
+        document.getElementById('toggle-Weta').checked = true;
         document.getElementById('toggle-Expanded').checked = true;
         document.getElementById('toggle-Wraith').checked = true;
         document.getElementById('toggle-End').checked = true;
@@ -175,6 +178,7 @@ function filter() {
         && document.getElementById("toggle-Siege").checked == false 
         && document.getElementById("toggle-Reflections").checked == false 
         && document.getElementById("toggle-Doom").checked == false 
+        && document.getElementById("toggle-Weta").checked == false 
         && document.getElementById("toggle-Shadows").checked == false 
         && document.getElementById("toggle-Rider").checked == false 
         && document.getElementById("toggle-Bloodlines").checked == false 
@@ -205,6 +209,7 @@ function filter() {
     if (document.getElementById("toggle-Siege").checked == true) {setList.push(".set-8"+selections);}
     if (document.getElementById("toggle-Reflections").checked == true) {setList.push(".set-9"+selections);}
     if (document.getElementById("toggle-Doom").checked == true) {setList.push(".set-10"+selections);}
+    if (document.getElementById("toggle-Weta").checked == true) {setList.push(".set-0"+selections);}
     if (document.getElementById("toggle-Shadows").checked == true) {setList.push(".set-11"+selections);}
     if (document.getElementById("toggle-Rider").checked == true) {setList.push(".set-12"+selections);}
     if (document.getElementById("toggle-Bloodlines").checked == true) {setList.push(".set-13"+selections);}
