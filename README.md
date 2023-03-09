@@ -4,7 +4,9 @@
 ## Features
 * **Basic Filtering:** "Searching" functions by applying filters to the database. The top navigation menu contains checkbox filters for each cardset and dropdown filters for culture and cardtype. Pressing "filter" displays the results.
 	- *Block Filtering:* Clicking the name of a category of sets ("block") toggles the entire category. If a set in the category is already checked, clicking the name of the category will first check all sets in the category. If all sets are checked, clicking the name will uncheck all of them.
+	- *Subcategories:* Certain cardtypes (Ally, Artifact, Possession, and Site) enable subcategory filtering when selected.
 	- *Filtering Validation:* If a culture and/or cardtype filter is selected without any sets checked, the filter button will check all sets and display the results.
+	- *Result Count:* The number of cards meeting the selected criteria is displayed beneath the "Filter" button when pressed.
 	- *Clearing Results:* Use the "reset" button or click the header title at the top of the page to clear results and toggles.
 
 * **Errata:** Cards with errata default to updated wording. This includes 2021 errata issued by the Player's Council. Mouseover these cards to show the original printing.
