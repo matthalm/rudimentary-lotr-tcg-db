@@ -107,11 +107,27 @@ function format_movieBlock() {
     format_fellowship();
     format_towers();
     format_king();
+    if ( document.getElementById('toggle-Reflections').checked == true 
+        && document.getElementById('toggle-Weta').checked == true ) {
+        document.getElementById('toggle-Reflections').checked = false;
+        document.getElementById('toggle-Weta').checked = false;
+    } else {
+        document.getElementById('toggle-Reflections').checked = true;
+        document.getElementById('toggle-Weta').checked = true;
+    }
 }
 
 function format_warStandard() {
     format_towers();
     format_king();
+    if ( document.getElementById('toggle-Reflections').checked == true 
+        && document.getElementById('toggle-Weta').checked == true ) {
+        document.getElementById('toggle-Reflections').checked = false;
+        document.getElementById('toggle-Weta').checked = false;
+    } else {
+        document.getElementById('toggle-Reflections').checked = true;
+        document.getElementById('toggle-Weta').checked = true;
+    }
     format_war();
 }
 
@@ -119,6 +135,7 @@ function format_finalStandard() {
     format_king();
     format_war();
     format_hunters();
+    format_other();
 }
 
 function format_open() {
