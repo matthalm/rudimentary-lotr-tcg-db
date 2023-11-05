@@ -102,3 +102,44 @@ select, button {
     width: 350px;
     height: 250px;
 }
+
+#card-container .errata {
+    cursor: help;
+}
+
+/* CAPTIONS */
+
+.caption {
+    position: absolute;
+    background-color: white;
+    font-size: .7em;
+    font-family: Arial Narrow, Arial, sans-serif;
+    border: 1px solid;
+}
+
+.errata .caption {
+    background-color: yellow;
+}
+
+.card .caption {
+    left: 25px;
+    right: 0;
+    bottom: 5px;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 5px;
+}
+
+.lcard .caption {
+    bottom: 100px;
+    left: -50px;
+    right: 275px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 5px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}

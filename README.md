@@ -9,7 +9,7 @@
 	- *Result Count:* The number of cards meeting the selected criteria is displayed beneath the "Filter" button when pressed.
 	- *Clearing Results:* Use the "reset" button or click the header title at the top of the page to clear results and toggles.
 
-* **Errata:** Cards with errata default to updated wording. This includes 2021 balancing errata issued by the Player's Council. Mouseover these cards to show the original printing.
+* **Errata:** Cards with errata default to the most recent version (as of the database's last update). This includes [balancing errata issued by the Player's Council](https://wiki.lotrtcgpc.net/wiki/PC_Errata). Click on cards with errata to view all printings (filters are preserved; click "filter" again to return to the previous search). Notes are included in some cases to clarify printings.
 
 ## Functionality
 The card database is contained within the html of the page. Images are pulled from https://wiki.lotrtcgpc.net. 
