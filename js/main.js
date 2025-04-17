@@ -25,14 +25,17 @@ function format_fellowship() {
 function format_towers() {
     if (document.getElementById('toggle-Towers').checked == true 
         && document.getElementById('toggle-Battle').checked == true 
-        && document.getElementById('toggle-Ents').checked == true) {
+        && document.getElementById('toggle-Ents').checked == true
+        && document.getElementById('toggle-Golden').checked == true) {
         document.getElementById('toggle-Towers').checked = false;
         document.getElementById('toggle-Battle').checked = false;
         document.getElementById('toggle-Ents').checked = false;
+        document.getElementById('toggle-Golden').checked = false;
     } else {
         document.getElementById('toggle-Towers').checked = true;
         document.getElementById('toggle-Battle').checked = true;
         document.getElementById('toggle-Ents').checked = true;
+        document.getElementById('toggle-Golden').checked = true;
     }
 }
 
@@ -165,7 +168,8 @@ function filter() {
         && document.getElementById("toggle-Rise").checked == false 
         && document.getElementById("toggle-Treachery").checked == false 
         && document.getElementById("toggle-End").checked == false 
-        && document.getElementById("toggle-Past").checked == false ) {
+        && document.getElementById("toggle-Past").checked == false
+        && document.getElementById("toggle-Golden").checked == false ) {
         format_open();
     }
 
@@ -197,6 +201,7 @@ function filter() {
     if (document.getElementById("toggle-Treachery").checked == true) {setList.push(".set-18"+selections);}
     if (document.getElementById("toggle-End").checked == true) {setList.push(".set-19"+selections);}
     if (document.getElementById("toggle-Past").checked == true) {setList.push(".set-v1"+selections);}
+    if (document.getElementById("toggle-Golden").checked == true) {setList.push(".set-v2"+selections);}
 
     let checkedSets = setList.join(', ');
     let cards = document.querySelectorAll(checkedSets);
