@@ -9,7 +9,17 @@
 	- *Result Count:* The number of cards meeting the selected criteria is displayed beneath the "Filter" button when pressed.
 	- *Clearing Results:* Use the "reset" button or click the header title at the top of the page to clear results and toggles.
 
-* **Errata:** Cards with errata default to the most recent version (as of the database's last update -- 2024 Yuletide Errata has not yet been entered). This includes [balancing errata issued by the Player's Council](https://wiki.lotrtcgpc.net/wiki/PC_Errata). Click on cards with errata to view all printings (filters are preserved; click "filter" again to return to the previous search). Notes are included in some cases to clarify printings.
+* **Errata:** Cards with errata default to the most recent version (as of the database's last update). This includes [balancing errata issued by the Player's Council](https://wiki.lotrtcgpc.net/wiki/PC_Errata). Click on cards with errata to view all printings (filters are preserved; click "filter" again to return to the previous search). Notes are included in some cases to clarify printings.
+	- Decipher Errata
+	- [X-List Errata (2021)](https://wiki.lotrtcgpc.net/wiki/PC_Errata#X-List_Errata) (42 cards)
+	- [2021 Yuletide Errata](https://wiki.lotrtcgpc.net/wiki/PC_Errata#2021_Yuletide_Errata) (28 cards)
+	- [2022 Summer Errata](https://wiki.lotrtcgpc.net/wiki/PC_Errata#2022_Summer_Errata) (5 cards)
+	- [2022 Yuletide Errata](https://wiki.lotrtcgpc.net/wiki/PC_Errata#2022_Yuletide_Errata) (68 cards)
+	- [2023 World Championship Errata](https://wiki.lotrtcgpc.net/wiki/PC_Errata#2023_World_Championship_Errata) (14 cards)
+	- [2023 Yuletide Errata](https://wiki.lotrtcgpc.net/wiki/PC_Errata#2023_Yuletide_Errata) (37 cards)
+	- [2024 World Championship Errata](https://wiki.lotrtcgpc.net/wiki/PC_Errata#2024_World_Championship_Errata) (8 cards)
+	- [2024 Yuletide + V2 Errata](https://wiki.lotrtcgpc.net/wiki/PC_Errata#2024_Yuletide_+_V2_Errata) (63 cards)
+	- [2025 Spring Errata](https://wiki.lotrtcgpc.net/wiki/PC_Errata#2025_Spring_Errata) (11 cards)
 
 ## Functionality
 The card database is contained within the html of the page. Images are pulled from https://wiki.lotrtcgpc.net. 
