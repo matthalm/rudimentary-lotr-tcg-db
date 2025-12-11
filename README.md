@@ -20,8 +20,8 @@
 	- [2024 World Championship Errata](https://wiki.lotrtcgpc.net/wiki/PC_Errata#2024_World_Championship_Errata) (8 cards)
 	- [2024 Yuletide + V2 Errata](https://wiki.lotrtcgpc.net/wiki/PC_Errata#2024_Yuletide_+_V2_Errata) (63 cards)
 	- [2025 Spring Errata](https://wiki.lotrtcgpc.net/wiki/PC_Errata#2025_Spring_Errata) (11 cards)
-	- <span style="color: red;">TODO:</span> [2025 World Championship Errata](https://wiki.lotrtcgpc.net/wiki/PC_Errata#2025_World_Championship_Errata) (6 cards)
-	- <span style="color: red;">TODO:</span> [2025 Yuletide + V3 Errata](https://wiki.lotrtcgpc.net/wiki/PC_Errata#2025_Yuletide_Errata_+_V3_Errata) (?? cards)
+	- TODO: [2025 World Championship Errata](https://wiki.lotrtcgpc.net/wiki/PC_Errata#2025_World_Championship_Errata) (6 cards)
+	- TODO: [2025 Yuletide + V3 Errata](https://wiki.lotrtcgpc.net/wiki/PC_Errata#2025_Yuletide_Errata_+_V3_Errata) (?? cards)
 
 ## Functionality
 The card database is contained within the html of the page. Images are pulled from https://wiki.lotrtcgpc.net. 
