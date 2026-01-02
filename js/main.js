@@ -6,10 +6,12 @@ function resetCards() {
 }
 
 function format_fellowship() {
-    if (document.getElementById('toggle-Fellowship').checked == true 
+    if (
+        document.getElementById('toggle-Fellowship').checked == true 
         && document.getElementById('toggle-Mines').checked == true 
         && document.getElementById('toggle-Realms').checked == true 
-        && document.getElementById('toggle-Past').checked == true) {
+        && document.getElementById('toggle-Past').checked == true
+        ) {
         document.getElementById('toggle-Fellowship').checked = false;
         document.getElementById('toggle-Mines').checked = false;
         document.getElementById('toggle-Realms').checked = false;
@@ -23,10 +25,12 @@ function format_fellowship() {
 }
 
 function format_towers() {
-    if (document.getElementById('toggle-Towers').checked == true 
+    if (
+        document.getElementById('toggle-Towers').checked == true 
         && document.getElementById('toggle-Battle').checked == true 
         && document.getElementById('toggle-Ents').checked == true
-        && document.getElementById('toggle-Golden').checked == true) {
+        && document.getElementById('toggle-Golden').checked == true
+        ) {
         document.getElementById('toggle-Towers').checked = false;
         document.getElementById('toggle-Battle').checked = false;
         document.getElementById('toggle-Ents').checked = false;
@@ -40,23 +44,30 @@ function format_towers() {
 }
 
 function format_king() {
-    if (document.getElementById('toggle-King').checked == true 
+    if (
+        document.getElementById('toggle-King').checked == true 
         && document.getElementById('toggle-Siege').checked == true 
-        && document.getElementById('toggle-Doom').checked == true) {
+        && document.getElementById('toggle-Doom').checked == true
+        && document.getElementById('toggle-Fields').checked == true
+        ) {
         document.getElementById('toggle-King').checked = false;
         document.getElementById('toggle-Siege').checked = false;
         document.getElementById('toggle-Doom').checked = false;
+        document.getElementById('toggle-Fields').checked = false;
     } else {
         document.getElementById('toggle-King').checked = true;
         document.getElementById('toggle-Siege').checked = true;
         document.getElementById('toggle-Doom').checked = true;
+        document.getElementById('toggle-Fields').checked = true;
     }
 }
 
 function format_war() {
-    if (document.getElementById('toggle-Shadows').checked == true 
+    if (
+        document.getElementById('toggle-Shadows').checked == true 
         && document.getElementById('toggle-Rider').checked == true 
-        && document.getElementById('toggle-Bloodlines').checked == true) {
+        && document.getElementById('toggle-Bloodlines').checked == true
+        ) {
         document.getElementById('toggle-Shadows').checked = false;
         document.getElementById('toggle-Rider').checked = false;
         document.getElementById('toggle-Bloodlines').checked = false;
@@ -68,9 +79,11 @@ function format_war() {
 }
 
 function format_hunters() {
-    if (document.getElementById('toggle-Hunters').checked == true 
+    if (
+        document.getElementById('toggle-Hunters').checked == true 
         && document.getElementById('toggle-Rise').checked == true 
-        && document.getElementById('toggle-Treachery').checked == true) {
+        && document.getElementById('toggle-Treachery').checked == true
+        ) {
         document.getElementById('toggle-Hunters').checked = false;
         document.getElementById('toggle-Rise').checked = false;
         document.getElementById('toggle-Treachery').checked = false;
@@ -82,11 +95,13 @@ function format_hunters() {
 }
 
 function format_other() {
-    if (document.getElementById('toggle-Reflections').checked == true 
+    if (
+        document.getElementById('toggle-Reflections').checked == true 
         && document.getElementById('toggle-Weta').checked == true 
         && document.getElementById('toggle-Expanded').checked == true 
         && document.getElementById('toggle-Wraith').checked == true 
-        && document.getElementById('toggle-End').checked == true) {
+        && document.getElementById('toggle-End').checked == true
+        ) {
         document.getElementById('toggle-Reflections').checked = false;
         document.getElementById('toggle-Weta').checked = false;
         document.getElementById('toggle-Expanded').checked = false;
@@ -148,7 +163,8 @@ function filter() {
 
     resetCards();
 
-    if(document.getElementById("toggle-Fellowship").checked == false 
+    if(
+        document.getElementById("toggle-Fellowship").checked == false 
         && document.getElementById("toggle-Mines").checked == false 
         && document.getElementById("toggle-Realms").checked == false 
         && document.getElementById("toggle-Towers").checked == false 
@@ -169,7 +185,9 @@ function filter() {
         && document.getElementById("toggle-Treachery").checked == false 
         && document.getElementById("toggle-End").checked == false 
         && document.getElementById("toggle-Past").checked == false
-        && document.getElementById("toggle-Golden").checked == false ) {
+        && document.getElementById("toggle-Golden").checked == false 
+        && document.getElementById("toggle-Fields").checked == false
+        ) {
         format_open();
     }
 
@@ -202,6 +220,7 @@ function filter() {
     if (document.getElementById("toggle-End").checked == true) {setList.push(".set-19"+selections);}
     if (document.getElementById("toggle-Past").checked == true) {setList.push(".set-v1"+selections);}
     if (document.getElementById("toggle-Golden").checked == true) {setList.push(".set-v2"+selections);}
+    if (document.getElementById("toggle-Fields").checked == true) {setList.push(".set-v3"+selections);}
 
     let checkedSets = setList.join(', ');
     let cards = document.querySelectorAll(checkedSets);
